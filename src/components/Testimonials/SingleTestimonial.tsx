@@ -1,5 +1,5 @@
 import { Testimonial } from "@/types/testimonial";
-import { SwiperSlide } from 'swiper/react';
+import Image from "next/image";
 
 const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   const { icon, name, category, image, content, designation, email, address } = testimonial;
@@ -10,7 +10,7 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
         <div className="flex items-center px-6 py-0 bg-gray-900">
           <div className="relative z-10 mb-2 h-[50px] w-[50px] items-center justify-center rounded-2xl bg-blue/0">
             <svg>
-              <image className="fill:white" xlinkHref={icon} width="50" height="50" />
+              <Image className="fill:white" src={icon} width="50" height="50" alt="icon"/>
             </svg>
           </div>
 

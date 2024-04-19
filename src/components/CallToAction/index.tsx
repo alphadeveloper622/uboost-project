@@ -7,8 +7,8 @@ const CallToAction = () => {
       <div className="container px-0 xl:px-24 2xl:px-32 3xl:px-40">
         <div className="flex flex-wrap gap-10 sm:gap-10 md:gap-12 lg:gap-14 xl:gap-16 2xl:gap-20 3xl:gap-20">
         <div
-              className={`relative mb-4 sm:mb-8 w-[450px] xl:w-[450px] 2xl:w-[450px] 3xl:w-[500px]
-                    h-[450px]  xl:h-[450px] 2xl:-[450px] 3xl:h-[500px] `}
+              className={`relative mb-4 sm:mb-8 w-[500px] xl:w-[500px] 2xl:w-[550px] 3xl:w-[600px]
+                    h-[500px]  xl:h-[500px] 2xl:-[550px] 3xl:h-[600px] `}
             >
               <Image
                 src="/images/about/girl.png"
