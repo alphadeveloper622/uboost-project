@@ -1,11 +1,11 @@
 import { Testimonial } from "@/types/testimonial";
 import Image from "next/image";
 
-const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
+const SingleTestimonial = ({ testimonial, key }: { testimonial: Testimonial, key:number }) => {
   const { icon, name, category, image, content, designation, email, address } = testimonial;
 
   return (
-    <div className="w-[430px] min-h-full overflow-hidden bg-white shadow-lg border border-gray-200 dark:bg-gray-800">
+    <div className="w-[430px] min-h-full overflow-hidden bg-white shadow-lg border border-gray-200 dark:bg-gray-800" key={key}>
         <img className="object-cover object-center w-full h-50" src={image} alt="avatar" />
         <div className="flex items-center px-6 py-0 bg-gray-900">
           <div className="relative z-10 mb-2 h-[50px] w-[50px] items-center justify-center rounded-2xl bg-blue/0">

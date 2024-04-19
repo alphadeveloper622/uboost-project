@@ -47,9 +47,9 @@ const Testimonials = () => {
           pagination={true}
           modules={[EffectCoverflow, Pagination]}
         >
-          {testimonialData.map((testimonial) => (
+          {testimonialData.map((testimonial, key) => (
               <SwiperSlide>
-                <SingleTestimonial testimonial={testimonial}/>
+                <SingleTestimonial testimonial={testimonial} key={key}/>
               </SwiperSlide>
           ))}
         </Swiper>
