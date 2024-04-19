@@ -15,7 +15,7 @@ const About = () => {
                   üboost: Our Platform
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  At üboost, we're reimagining crowdfunding with accountability, transparency, and connectedness at the forefront. Unlike traditional platforms, we offer a unique ecosystem that empowers donors, campaigners, and beneficiaries alike.
+                  "At üboost, we are reimagining crowdfunding with accountability, transparency, and connectedness at the forefront. Unlike traditional platforms, we offer a unique ecosystem that empowers donors, campaigners, and beneficiaries alike.
                 </p>
                 <div className="mx-auto text-center">
                   <a

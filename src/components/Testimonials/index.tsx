@@ -53,11 +53,7 @@ const Testimonials = () => {
               </SwiperSlide>
           ))}
         </Swiper>
-        {/* <Carousel itemsToShow={3}>
-        {testimonialData.map((testimonial, i) => (
-            <SingleTestimonial key={i} testimonial={testimonial} />
-          ))}
-        </Carousel> */}
+
       </div>
 
     </section>

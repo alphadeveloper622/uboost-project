@@ -27,7 +27,7 @@ const CallToAction = () => {
               </span>
             </h2>
             <p className="mx-auto mb-6 max-w-[515px] text-base leading-[1.5] text-white">
-              Let's make the world more beautiful with each other's hands.
+              Let&apos;s make the world more beautiful with each other&apos;s hands.
             </p>
             <div className="mx-auto text-center">
               <Link
