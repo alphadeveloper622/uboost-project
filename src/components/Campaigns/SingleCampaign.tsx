@@ -55,7 +55,15 @@ const SingleBlog = ({ campaign }: { campaign: Campaign }) => {
             {paragraph}
           </p>
           <div className="border-b-2 pb-2">
-            <Progress value={(raised / goal) * 100} color="blue" />
+            <Progress value={(raised / goal) * 100} variant="filled" color="blue" size="md" label=""
+            className={undefined} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}            />
+
+            {/* <div
+              className="flex-start flex h-2.5 w-full overflow-hidden rounded-full font-sans text-xs font-medium">
+              <div
+                className="flex items-center justify-center w-{(raised / goal) * 100} h-full overflow-hidden text-white break-all bg-ublue-700 rounded-full">
+              </div>
+            </div> */}
             <div className="flex flex-row py-2 px-2">
               <div className="flex flex-1">
                 <p className='text-dark/70 font-medium'>Goal:</p>
@@ -92,7 +100,7 @@ const SingleBlog = ({ campaign }: { campaign: Campaign }) => {
             </div>
           </div>
           <div className="flex items-center p-4">
-            <Button className="flex-1 bg-primary hover:bg-primary/80">Donate</Button>
+            <Button className="flex-1 bg-primary hover:bg-primary/80" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>Donate</Button>
           </div>
         </div>
       </div>
