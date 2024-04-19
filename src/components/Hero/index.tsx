@@ -16,9 +16,9 @@ const Hero = () => {
         </div>
       </div>
       <div className="absolute bg-dark inset-0  w-full bg-cover bg-no-repeat overflow-visible">
-        <img src="/images/hero/hero-image.jpg" alt="video image" className="w-full h-full object-fill opacity-60" />
+        <Image fill={true} src="/images/hero/hero-image.jpg" alt="video image" className="object-fill opacity-60" />
       </div>
-      <img src="/images/hero/hero-bottom.png" alt="video image" className="absoulte left-0 -bottom-1 z-15 w-full h-16 absolute object-fill" />
+      <Image width={1920} height={64} src="/images/hero/hero-bottom.png" alt="video image" className="absoulte left-0 -bottom-1 z-15 absolute object-fill" />
     </div>
   );
 };
