@@ -10,7 +10,7 @@ const featuresData: Feature[] = [
         alt="Talent Boost Africa"
         width={200}
         height={200}
-        className="header-logo w-full dark:hidden"
+        className="dark:hidden flex justify-center"
       />
     ),
     title: "Talent Boost Africa",
@@ -26,7 +26,7 @@ const featuresData: Feature[] = [
         alt="Need a boost"
         width={200}
         height={200}
-        className="header-logo w-full dark:hidden"
+        className="dark:hidden items-center justify-center"
       />
     ),
     title: "Need a Boost?",
@@ -42,7 +42,7 @@ const featuresData: Feature[] = [
         alt="Be a booser"
         width={200}
         height={200}
-        className="header-logo w-full dark:hidden"
+        className="dark:hidden items-center justify-center"
       />
     ),
     title: "Be a booster",
