@@ -74,7 +74,7 @@ const The_Next_Generation = () => {
                 THE NEXT GENERATION
               </h1>
               <h4 className="text-left text-[8px] sm:text-[11px] md:text-[14px] lg:text-[17px] xl:text-xl 2xl:text-2xl font-medium leading-tight">
-                Join üboost in empowering young athletes across Africa through the Talent Boost Africa initiative! This groundbreaking program offers financial assistance of up to $2,400 per year ($200 per month) to amateur athletes ages 6-17, covering coaching fees, fitness training, and gear and equipment. Coaches and sports organizations can refer eligible candidates by filling out the form below. Selected athletes will be contacted directly. Applications open on April 15, 2024. The program begins on May 1, 2024. Don't miss this opportunity to make a difference in the lives of aspiring athletes! Eligible sports include Basketball, Football (Soccer), Tennis, Golf, Track & Field, and Olympic wrestling.
+                Join üboost in empowering young athletes across Africa through the Talent Boost Africa initiative! This groundbreaking program offers financial assistance of up to $2,400 per year ($200 per month) to amateur athletes ages 6-17, covering coaching fees, fitness training, and gear and equipment. Coaches and sports organizations can refer eligible candidates by filling out the form below. Selected athletes will be contacted directly. Applications open on April 15, 2024. The program begins on May 1, 2024. Don&apos;t miss this opportunity to make a difference in the lives of aspiring athletes! Eligible sports include Basketball, Football (Soccer), Tennis, Golf, Track & Field, and Olympic wrestling.
               </h4>
             </div>
           </div>
