@@ -1,4 +1,4 @@
-import SectionTitle from "../Common/SectionTitle";
+import SectionTitle from "../_Common/SectionTitle";
 import SingleBlog from "./SingleBlog";
 
 const HomeBlogSection = ({ posts }: any) => {

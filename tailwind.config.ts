@@ -8,21 +8,19 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/styles/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{html,js,tsx}",
+    "./node_modules/tw-elements/js/**/*.js",
   ],
   theme: {
     screens: {
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
-
       'md': '768px',
       // => @media (min-width: 768px) { ... }
-
       'lg': '1024px',
       // => @media (min-width: 1024px) { ... }
-
       'xl': '1280px',
       // => @media (min-width: 1280px) { ... }
-
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
       '3xl': '1800px',
@@ -31,7 +29,7 @@ const config: Config = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'primary': '#0977D9',
+      'primary': '#0976d9',
       'secondary': '#119bff',
       'ublue': {
         50: '#edfbff',
@@ -52,6 +50,8 @@ const config: Config = {
   plugins: [
     require("tailgrids/plugin"), 
     require('@tailwindcss/typography'),
+    require("tw-elements/plugin.cjs"),
+    require("daisyui"),
   ],
 };
 

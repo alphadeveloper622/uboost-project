@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 import SocialSignIn from "../SocialSignIn";
 import SwitchOption from "../SwitchOption";
 import MagicLink from "../MagicLink";
-import Loader from "@/components/Common/Loader";
+import Loader from "@/components/_Common/Loader";
 
 const Signin = () => {
   const router = useRouter();

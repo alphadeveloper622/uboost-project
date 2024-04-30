@@ -1,4 +1,4 @@
-import SectionTitle from "../Common/SectionTitle";
+import SectionTitle from "../_Common/SectionTitle";
 import SingleFeature from "./SingleFeature";
 import featuresData from "./featuresData";
 
@@ -8,7 +8,7 @@ const Features = () => {
       <div className="container">
         <SectionTitle
           subtitle=""
-          title="Main Features Of üboost"
+          title="Featured"
           paragraph=""
           center
         />

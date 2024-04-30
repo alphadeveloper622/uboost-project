@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import SectionTitle from "../Common/SectionTitle";
+import SectionTitle from "../_Common/SectionTitle";
 import SingleCampaign from "./SingleCampaign";
 import campaignData from "./campaignData";
 
@@ -11,7 +11,7 @@ const Campaigns = () => {
       className="bg-gradient-to-t from-ublue-50 to-white dark:bg-bg-color-dark py-2 pt-10 lg:pb-16 lg:pt-20"
     >
       <SectionTitle
-        title="Trending Campaigns"
+        title="Trending"
         paragraph=""
         center
       />

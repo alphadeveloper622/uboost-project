@@ -1,7 +1,7 @@
 'use client'
 import { useRef, useState } from 'react';
 import testimonialData from "./testimonialData";
-import SectionTitle from '../Common/SectionTitle';
+import SectionTitle from '../_Common/SectionTitle';
 import SingleTestimonial from './SingleTestimonial';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -24,9 +24,9 @@ const Testimonials = () => {
     <section className='bg-gradient-to-t from-ublue-400/60 to-ublue-100 py-2 pt-10 lg:pb-16 lg:pt-20'>
       <SectionTitle
         subtitle=""
-        title="What our Fundraiser Say"
+        title="What People Say"
         paragraph="Listen to their sincere confessions of support and support."
-        width="640px"
+        width="1920px"
         center
       />
 

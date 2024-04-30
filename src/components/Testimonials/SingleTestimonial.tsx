@@ -1,24 +1,21 @@
 import { Testimonial } from "@/types/testimonial";
 import Image from "next/image";
+import getCampaignIcon from "@/components/_Common/CampaignCategoryIcon";
 
 const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
-  const { icon, name, category, image, content, designation, email, address } = testimonial;
+  const { name, category, image, content, designation, email, address } = testimonial;
 
   return (
     <div className="w-[430px] min-h-full overflow-hidden bg-white shadow-lg border border-gray-200 dark:bg-gray-800">
       <div className="relative aspect-[16/9] items-center justify-center">
         <Image src={image} alt="campaign image" fill />
       </div>
-      <div className="flex items-center px-6 py-0 bg-gray-900">
-        <div className="relative z-10 mb-2 h-[50px] w-[50px] items-center justify-center rounded-2xl bg-blue/0">
-          <svg>
-            <Image className="fill:white" src={icon} width="50" height="50" alt="icon" />
-          </svg>
+      <div className="flex items-center px-6 py-0 bg-gray-800">
+        <div className="relative flex flex-row z-10 mb-2 h-auto w-[50px]  items-center justify-start">
+          <Image src={getCampaignIcon(category)} width="45" height="45" alt="icon" />
         </div>
-
         <h1 className="mx-3 text-lg font-semibold text-white">{category}</h1>
       </div>
-
       <div className="px-6 py-4">
         <h1 className="text-xl font-semibold text-gray-800 dark:text-white">{name}</h1>
 

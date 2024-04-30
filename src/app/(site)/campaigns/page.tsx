@@ -1,5 +1,4 @@
-import Breadcrumb from "@/components/Common/Breadcrumb";
-import Faq from "@/components/Faq";
+import Breadcrumb from "@/components/_Common/Breadcrumb";
 import Campaigns from "@/components/Campaigns";
 import { Metadata } from "next";
 

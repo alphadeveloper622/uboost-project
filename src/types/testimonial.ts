@@ -1,6 +1,5 @@
 export type Testimonial = {
   id: number;
-  icon: string;
   name: string;
   designation: string;
   category: string;

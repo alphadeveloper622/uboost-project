@@ -1,5 +1,5 @@
-import Breadcrumb from "@/components/Common/Breadcrumb";
-import HowItWorks from "@/components/HowItWorks";
+import Breadcrumb from "@/components/_Common/Breadcrumb";
+import HowItWorks from "@/components/How It Works";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "",
 };
 
-const HowItWorksPage = () => {
+const How_It_Works_Page = () => {
   return (
     <>
       <Breadcrumb pageName="How It Works" />
@@ -17,4 +17,4 @@ const HowItWorksPage = () => {
   );
 };
 
-export default HowItWorksPage;
+export default How_It_Works_Page;

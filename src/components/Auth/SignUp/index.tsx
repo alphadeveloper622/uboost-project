@@ -7,7 +7,7 @@ import SocialSignIn from "../SocialSignIn";
 import SwitchOption from "../SwitchOption";
 import { useState } from "react";
 import MagicLink from "../MagicLink";
-import Loader from "@/components/Common/Loader";
+import Loader from "@/components/_Common/Loader";
 
 const SignUp = () => {
   const router = useRouter();

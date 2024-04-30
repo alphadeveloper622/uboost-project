@@ -1,4 +1,4 @@
-import SectionTitle from "../Common/SectionTitle";
+import SectionTitle from "../_Common/SectionTitle";
 import SingleFaq from "./SingleFaq";
 
 const Faq = () => {
@@ -7,45 +7,43 @@ const Faq = () => {
       <div className="container">
         <SectionTitle
           subtitle=""
-          title="Any Questions? Answered"
+          title="FAQ"
           paragraph=""
           width="640px"
           center
         />
-
-        <div className="-mx-4 mt-[60px] flex flex-wrap lg:mt-20">
-          <div className="w-full px-4 lg:w-1/2">
-            <SingleFaq
-              question="Question1?"
-              answer="Answer1"
-            />
-            <SingleFaq
-              question="Question1?"
-              answer="Answer1"
-            />
-            <SingleFaq
-              question="Question1?"
-              answer="Answer1"
-            />
+        <div className="px-10 py-5 space-y-5">
+          <div className="collapse collapse-plus bg-ublue-400">
+            <input type="radio" name="my-accordion-3" />
+            <div className="collapse-title text-xl font-medium">
+              Question1
+            </div>
+            <div className="collapse-content">
+              <p>Answer1</p>
+            </div>
+          </div>
+          <div className="collapse collapse-plus bg-ublue-400">
+            <input type="radio" name="my-accordion-3" />
+            <div className="collapse-title text-xl font-medium">
+            Question2
+            </div>
+            <div className="collapse-content">
+              <p>Answer2</p>
+            </div>
+          </div>
+          <div className="collapse collapse-plus bg-ublue-400">
+            <input type="radio" name="my-accordion-3" />
+            <div className="collapse-title text-xl font-medium">
+            Question3
+            </div>
+            <div className="collapse-content">
+              <p>Answer3</p>
+            </div>
           </div>
 
-          <div className="w-full px-4 lg:w-1/2">
-            <SingleFaq
-              question="Question1?"
-              answer="Answer1"
-            />
-            <SingleFaq
-              question="Question1?"
-              answer="Answer1"
-            />
-            <SingleFaq
-              question="Question1?"
-              answer="Answer1"
-            />
-          </div>
         </div>
-      </div>
 
+      </div>
       <div>
         <span className="absolute left-4 top-4 -z-[1]">
           <svg

@@ -1,4 +1,4 @@
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Breadcrumb from "@/components/_Common/Breadcrumb";
 import Resources from "@/components/Resources";
 import { Metadata } from "next";
 

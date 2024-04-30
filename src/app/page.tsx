@@ -1,16 +1,17 @@
 import About from "@/components/About";
-import CallToAction from "@/components/CallToAction";
-import ScrollUp from "@/components/Common/ScrollUp";
+import Why_uboost from "@/components/Why uboost";
+import ScrollUp from "@/components/_Common/ScrollUp";
 import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Campaigns from "@/components/Campaigns";
 import Testimonials from "@/components/Testimonials";
-import HowItWorks from "@/components/HowItWorks";
+import TheNextGeneration from "@/components/The next generation";
+import HowItWorks from "@/components/How It Works";
 import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
-import SectionTitle from "@/components/Common/SectionTitle";
+
 
 export const metadata: Metadata = {
   title: "üboost",
@@ -27,18 +28,11 @@ export default function Home() {
       <Campaigns />
       <About />
       <Features />
-      <CallToAction />
+      <Why_uboost />
+      <TheNextGeneration />
       <HowItWorks />
       <Testimonials />
       <Faq />
-      <div className="pt-20"/>
-      <SectionTitle
-          subtitle=""
-          title="Contact Us"
-          paragraph=""
-          center
-        />
-      <Contact />
     </main>
   );
 }

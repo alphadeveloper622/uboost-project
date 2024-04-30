@@ -39,3 +39,11 @@ This will launch the template on [localhost:3000](http://localhost:3000).
 - Update signin & signup page Design
 - Integrated Magic link signin
 - & Forgot password
+
+
+
+
+#### dev alpha
+
+
+"...undefined link..." will replace...

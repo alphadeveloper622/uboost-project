@@ -1,5 +1,5 @@
 import { TeamType } from "@/types/team";
-import SectionTitle from "../Common/SectionTitle";
+import SectionTitle from "../_Common/SectionTitle";
 import SingleTeam from "./SingleTeam";
 
 const teamData: TeamType[] = [

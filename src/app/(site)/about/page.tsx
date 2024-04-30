@@ -1,6 +1,6 @@
 import About from "@/components/About";
-import Breadcrumb from "@/components/Common/Breadcrumb";
-import Team from "@/components/Team";
+import Breadcrumb from "@/components/_Common/Breadcrumb";
+import Fundraising_Dashboard from "@/components/Fundraising Dashboard";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
