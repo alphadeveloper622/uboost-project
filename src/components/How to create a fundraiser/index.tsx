@@ -51,7 +51,7 @@ const How_To_Create_A_Fundraiser = () => {
           </div>
           <p className="text-body-color dark:text-dark-6 mb-5 text-base">
             <h4 className="text-center text-primary text-[8px] sm:text-[11px] md:text-[14px] lg:text-[17px] xl:text-xl 2xl:text-2xl font-medium leading-tight">
-              Here's Your Zuboost How-To Guide!
+              Here&apos;s Your üboost How-To Guide&#33;
             </h4>
           </p>
         </div>
@@ -66,35 +66,35 @@ const How_To_Create_A_Fundraiser = () => {
         </div>
         <div className="w-full sm:w-full md:w-full 2xl:w-1/2 px-0 sm:px-0 md:px-4 lg:px-8 lx:px-12 2xl:px-16 3xl:px-20">
           <p className="text-left leading-normal text-gray-800 text-xl lg:text-xl xl:text-2xl 2xl:text-3xl font-medium">
-            So, you've joined the Zuboost party? Fantastic! Now, let's kick off your fundraising journey in three simple, super-fun steps:
+            So, you&apos;ve joined the üboost party? Fantastic&#33; Now, let&apos;s kick off your fundraising journey in three simple, super-fun steps:
           </p>
           <br />
           <p className="text-left leading-normal text-gray-800 text-xl lg:text-xl xl:text-2xl 2xl:text-3xl font-medium">
-            Step 1: Hit the create campaign button "+".
+            Step 1: Hit the create campaign button &quot;+&quot;.
           </p>
           <br />
           <p className="text-left leading-normal text-gray-800 text-md lg:text-lg xl:text-xl 2xl:text-2xl font-medium">
-            Dive into Zuboost and channel your inner fundraising superstar! Look for the create campaign button "+" in the top right corner of your screen. Give it a name, a pic, and a short description.
+            Dive into üboost and channel your inner fundraising superstar&#33; Look for the create campaign button &quot;+&quot; in the top right corner of your screen. Give it a name, a pic, and a short description.
           </p>
           <br />
           <p className="text-left leading-normal text-gray-800 text-xl lg:text-xl xl:text-2xl 2xl:text-3xl font-medium">
-            Step 2: Lights, Camera, Action – Create a Video That Pops!
+            Step 2: Lights, Camera, Action – Create a Video That Pops&#33;
           </p>
           <br />
           <p className="text-left leading-normal text-gray-800 text-md lg:text-lg xl:text-xl 2xl:text-2xl font-medium">
-            Time to shine in the spotlight! Craft a video that screams "YOU." Share your passion, your dreams, and why your campaign is the coolest thing since sliced bread. Don't forget to sprinkle in some filters, emojis, and a dash of your unique personality. Zuboost is your stage – own it! Upload your video in the "Create a Tag" screen.
+            Time to shine in the spotlight&#33; Craft a video that screams &quot;YOU.&quot; Share your passion, your dreams, and why your campaign is the coolest thing since sliced bread. Don&apos;t forget to sprinkle in some filters, emojis, and a dash of your unique personality. üboost is your stage – own it&#33; Upload your video in the &quot;Create a Tag&quot; screen.
           </p>
           <br />
           <p className="text-left leading-normal text-gray-800 text-xl lg:text-xl xl:text-2xl 2xl:text-3xl font-medium">
-            Step 3: Tag, You're It – Share the Love!
+            Step 3: Tag, You&apos;re It – Share the Love&#33;
           </p>
           <br />
           <p className="text-left leading-normal text-gray-800 text-md lg:text-lg xl:text-xl 2xl:text-2xl font-medium">
-            Now, the fun part! Hit the "Tag" button and send your masterpiece to your friends or family via text or email. Picture this: friends, family, and even your neighbor's dog watching your video, cheering you on! It's like a virtual pep rally for your dreams. Ready, set, tag away! Hit the "Send" button.
-            And there you have it! Three steps to kickstart your Zuboost campaign. So, what are you waiting for? Hit that "Create Campaign" button, dazzle the world with your video, and tag your way to fundraising glory!
+            Now, the fun part&#33; Hit the &quot;Tag&quot; button and send your masterpiece to your friends or family via text or email. Picture this: friends, family, and even your neighbor&apos;s dog watching your video, cheering you on&#33; It&apos;s like a virtual pep rally for your dreams. Ready, set, tag away&#33; Hit the &quot;Send&quot; button.
+            And there you have it&#33; Three steps to kickstart your üboost campaign. So, what are you waiting for? Hit that &quot;Create Campaign&quot; button, dazzle the world with your video, and tag your way to fundraising glory&#33;
             <br />
             <br />
-            Zuboost – Because fundraising should be as fun as chasing your dreams!
+            üboost – Because fundraising should be as fun as chasing your dreams&#33;
           </p>
           <br />
         </div>

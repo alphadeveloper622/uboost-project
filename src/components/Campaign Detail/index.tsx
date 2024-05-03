@@ -256,16 +256,16 @@ const Campaign_Detail = ({ campaign }: { campaign: Campaign }) => {
             </TabsHeader>
             <TabsBody placeholder="" onPointerEnterCapture={() => { }} onPointerLeaveCapture={() => { }}>
               <TabPanel key="posts" value="posts">
-                "POSTS"
+                POSTS Content
               </TabPanel>
               <TabPanel key="boosters" value="boosters">
-                "BOOSTERS"
+                BOOSTERS Content
               </TabPanel>
               <TabPanel key="members" value="members">
-                "MEMBERS"
+                MEMBERS Content
               </TabPanel>
               <TabPanel key="bank" value="bank">
-                "BANK"
+                BANK Content
               </TabPanel>
             </TabsBody>
           </Tabs>

@@ -249,7 +249,7 @@ const Help_Center = () => {
                           <div className="flex flex-col items-center">
                             <div className="flex w-full justify-start">
                               <p className="text-left leading-normal text-gray-800 text-md lg:text-lg xl:text-xl 2xl:text-2xl font-medium">
-                                What happens if I don't reach my fundraising goal?
+                                What happens if I don&apos;t reach my fundraising goal?
                               </p>
                             </div>
                           </div>
@@ -259,7 +259,7 @@ const Help_Center = () => {
                   </AccordionHeader>
                   <AccordionBody>
                     <p className="text-left leading-normal text-gray-600 text-sm lg:text-md xl:text-lg 2xl:text-xl font-medium">
-                      No worries! üboost is flexible, and you keep whatever funds you've raised. Every little bit counts, and we celebrate all achievements.
+                      No worries! üboost is flexible, and you keep whatever funds you&apos;ve raised. Every little bit counts, and we celebrate all achievements.
                     </p>
                   </AccordionBody>
                 </Accordion>
@@ -340,7 +340,7 @@ const Help_Center = () => {
                   </AccordionHeader>
                   <AccordionBody>
                     <p className="text-left leading-normal text-gray-600 text-sm lg:text-md xl:text-lg 2xl:text-xl font-medium">
-                      To make your first listing, you'll have to first mint the NFT. Set the price of the artwork in Enefty, set the royalty, and mint the NFT. The only fees to be paid here are the gas fees.
+                      To make your first listing, you&apos;ll have to first mint the NFT. Set the price of the artwork in Enefty, set the royalty, and mint the NFT. The only fees to be paid here are the gas fees.
                     </p>
                   </AccordionBody>
                 </Accordion>
