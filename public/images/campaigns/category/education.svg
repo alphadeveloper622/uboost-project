@@ -1,1 +1,16 @@
-<svg width="512" height="512" viewBox="0 0 512 512" style="color:#ffffff" xmlns="http://www.w3.org/2000/svg" class="h-full w-full"><rect width="512" height="512" x="0" y="0" rx="30" fill="transparent" stroke="transparent" stroke-width="0" stroke-opacity="100%" paint-order="stroke"></rect><svg width="256px" height="256px" viewBox="0 0 32 32" fill="#ffffff" x="128" y="128" role="img" style="display:inline-block;vertical-align:middle" xmlns="http://www.w3.org/2000/svg"><g fill="#ffffff"><path fill="currentColor" d="M26 30h-2v-3a5.006 5.006 0 0 0-5-5h-6a5.006 5.006 0 0 0-5 5v3H6v-3a7.008 7.008 0 0 1 7-7h6a7.008 7.008 0 0 1 7 7zM5 6a1 1 0 0 0-1 1v9h2V7a1 1 0 0 0-1-1z"/><path fill="currentColor" d="M4 2v2h5v7a7 7 0 0 0 14 0V4h5V2Zm7 2h10v3H11Zm5 12a5 5 0 0 1-5-5V9h10v2a5 5 0 0 1-5 5Z"/></g></svg></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M30,0h452c16.6,0,30,13.4,30,30v452c0,16.6-13.4,30-30,30H30c-16.6,0-30-13.4-30-30V30C0,13.4,13.4,0,30,0z"/>
+<g>
+	<path class="st1" d="M336,368h-16v-24c0-22.1-17.9-40-40-40h-48c-22.1,0-40,17.9-40,40v24h-16v-24c0-30.9,25.1-56,56-56h48
+		c30.9,0,56,25.1,56,56V368z M168,176c-4.4,0-8,3.6-8,8v72h16v-72C176,179.6,172.4,176,168,176z"/>
+	<path class="st1" d="M160,144v16h40v56c0,30.9,25.1,56,56,56s56-25.1,56-56v-56h40v-16H160z M216,160h80v24h-80V160z M256,256
+		c-22.1,0-40-17.9-40-40v-16h80v16C296,238.1,278.1,256,256,256z"/>
+</g>
+</svg>

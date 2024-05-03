@@ -13,7 +13,7 @@ const Features = () => {
           center
         />
         <div className="continer mx-10">
-          <div className="mx-4 mt-4 flex flex-wrap xl:mx-28 2xl:mx-36">
+          <div className="justify-center items-center mx-4 mt-4 flex flex-wrap xl:mx-28 2xl:mx-36">
             {featuresData.map((feature, i) => (
               <SingleFeature key={i} feature={feature} />
             ))}

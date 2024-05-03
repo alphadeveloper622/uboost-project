@@ -4,18 +4,15 @@ const SectionTitle = ({
   paragraph,
   width = "1920px",
   center,
-  mb,
 }: {
   subtitle?: string;
   title: string;
   paragraph: string;
   width?: string;
   center?: boolean;
-  mb?: string;
 }) => {
   return (
-    <div className="flex flex-wrap py-16 justify-center">
-      
+    <div className="flex flex-wrap py-10 justify-center items-center"> 
       <div
         className={`wow fadeInUp w-full${
           center ? "mx-auto text-center" : "mx-auto text-left"

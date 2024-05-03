@@ -9,8 +9,7 @@ const featuresData: Feature[] = [
         src={"/images/features/Talent Boost Africa.svg"}
         alt="Talent Boost Africa"
         width={200}
-        height={200}
-        className="dark:hidden flex justify-center"
+        height={220}
       />
     ),
     title: "Talent Boost Africa",
@@ -25,8 +24,7 @@ const featuresData: Feature[] = [
         src={"/images/features/Need a boost.svg"}
         alt="Need a boost"
         width={200}
-        height={200}
-        className="dark:hidden items-center justify-center"
+        height={80}
       />
     ),
     title: "Need a Boost?",
@@ -41,8 +39,7 @@ const featuresData: Feature[] = [
         src={"/images/features/Be a booster.svg"}
         alt="Be a booser"
         width={200}
-        height={200}
-        className="dark:hidden items-center justify-center"
+        height={240}
       />
     ),
     title: "Be a booster",

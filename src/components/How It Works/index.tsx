@@ -14,7 +14,6 @@ const HowItWorks = () => {
           title="We are ready to help"
           paragraph="Yes, that is true! Everyone has the potential to achieve their dreams with hard work, dedication, and perseverance. It's important to believe in yourself and not give up when faced with challenges or setbacks. Is there anything specific that I can help you with in regards to achieving your dreams?"
           center
-          mb="80px"
         />
 
         <div className="-mx-4 flex flex-wrap">

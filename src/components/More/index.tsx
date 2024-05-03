@@ -14,7 +14,6 @@ const More = () => {
           title=""
           paragraph="More"
           center
-          mb="80px"
         />
 
         <div className="-mx-4 flex flex-wrap">

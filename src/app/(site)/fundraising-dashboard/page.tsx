@@ -2,8 +2,7 @@ import Fundraising_Dashboard from "@/components/Fundraising Dashboard";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Fundraising Dashboard",
+  title:"Fundraising Dashboard",
   description: "",
 };
 

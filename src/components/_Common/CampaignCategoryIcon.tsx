@@ -4,7 +4,6 @@ const categoryIcon: { [key: string]: string } = {
   Finance: '/image/campaigns/category/finance.svg',
   Education: '/images/campaigns/category/education.svg',
   Environment: '/images/campaigns/category/environment.svg',
-  Social: '/images/campaigns/category/social.svg',
   Sports: '/images/campaigns/category/sport.svg',
   Science: '/images/campaigns/category/science.svg',
   Technology: '/images/campaigns/category/technology.svg',
@@ -28,9 +27,6 @@ const getCampaignIcon = (category: string): string => {
       break;
     case 'Environment':
       url = categoryIcon.Environment;
-      break;
-    case 'Social':
-      url = categoryIcon.Social;
       break;
     case 'Sports':
       url = categoryIcon.Sports;

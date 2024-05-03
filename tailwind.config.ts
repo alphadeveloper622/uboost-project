@@ -1,3 +1,4 @@
+import {nextui} from '@nextui-org/theme';
 import type { Config } from "tailwindcss";
 const withMT = require("@material-tailwind/react/utils/withMT");
 
@@ -10,6 +11,7 @@ const config: Config = {
     "./src/styles/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{html,js,tsx}",
     "./node_modules/tw-elements/js/**/*.js",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     screens: {
@@ -48,10 +50,11 @@ const config: Config = {
     extend: {},
   },
   plugins: [
-    require("tailgrids/plugin"), 
+    require('tailgrids/plugin'), 
     require('@tailwindcss/typography'),
-    require("tw-elements/plugin.cjs"),
-    require("daisyui"),
+    require('tw-elements/plugin.cjs'),
+    require('daisyui'),
+    [nextui()],
   ],
 };
 

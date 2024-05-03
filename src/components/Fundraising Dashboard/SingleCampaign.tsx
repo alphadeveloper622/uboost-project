@@ -6,12 +6,12 @@ import Image from "next/image";
 import getCampaignIcon from "@/components/_Common/CampaignCategoryIcon";
 import { useState } from "react";
 
-const SingleBlog = ({ campaign }: { campaign: Campaign }) => {
+const SingleCampaign = ({ campaign }: { campaign: Campaign }) => {
   const [isOpen, setOpen] = useState(false);
   const { title, category, image, paragraph, fundraiser, goal, raised, createdDate } = campaign;
   return (
     <>
-      <div className="group relative overflow-hidden border-2  rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark">
+      <div className="w-[400px] relative overflow-hidden border-2  rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark">
         <div className="container p-0 m-0 space-x-0 space-y-0 bg-dark/20">
           <div className="relative block aspect-[16/9] w-full bg-dark/20">
             <span className="absolute right-6 top-6 inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 md:text-[10px] lg:text-[10px] xl:text-[12px] 2xl:text-[12px] font-semibold capitalize text-white">
@@ -20,7 +20,7 @@ const SingleBlog = ({ campaign }: { campaign: Campaign }) => {
             <span className="absolute left-2 bottom-2 text-xl inline-flex items-center justify-center px-4 py-2 font-bold capitalize text-white">
               {title}
             </span>
-            <div className="">
+            <div>
               {isOpen ? (
                 <video className="h-full w-full" controls autoPlay onEnded={() => setOpen(false)}>
                   <source src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
@@ -108,4 +108,4 @@ const SingleBlog = ({ campaign }: { campaign: Campaign }) => {
   );
 };
 
-export default SingleBlog;
+export default SingleCampaign;

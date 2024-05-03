@@ -23,6 +23,12 @@ body {
   }
 }
 
+.utruncate {
+  white-space: wrap; /* Prevents the text from wrapping */
+  overflow: hidden; /* Keeps the content from spilling out */
+  text-overflow: ellipsis; /* Adds '...' at the end when text overflows */
+}
+
 .sticky-menu .navbar-logo {
   @apply py-2;
 }

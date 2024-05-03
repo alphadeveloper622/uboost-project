@@ -11,6 +11,7 @@ import TheNextGeneration from "@/components/The next generation";
 import HowItWorks from "@/components/How It Works";
 import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
+import SectionTitle from "@/components/_Common/SectionTitle";
 
 
 export const metadata: Metadata = {

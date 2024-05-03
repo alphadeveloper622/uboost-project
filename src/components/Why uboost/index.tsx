@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Why_uboost = () => {
   return (
-    <section className="relative z-10 overflow-hidden bg-gradient-to-r from-ublue-200 to-blue-700 py-16 lg:py-[30px]">
+    <section className="relative z-10 overflow-hidden bg-gradient-to-r from-ublue-500 to-blue-400 py-16 lg:py-[30px]">
       <div className="container">
         <div className="flex flex-row flex-wrap justify-center items-center">
           <div className="w-full sm:w-10/12 mb:w-7/12 lg:w-8/12 lg:px-0 xl:w-1/2 xl:px-4 2xl:w-1/2 2xl:px-18 3xl:w-1/2 3xl:px-20">
@@ -31,15 +31,16 @@ const Why_uboost = () => {
             <p className="mx-auto mb-6 py-10 max-w-[515px] text-base leading-[1.5] text-white">
               At üboost, rest assured that your generous contributions make a tangible difference in the causes you support, as we diligently oversee the utilization of funds.
             </p>
-            <div className="mx-auto text-center">
-              <Link
-                href="/"
-                className="inline-block rounded-md border border-transparent bg-primary px-7 py-2 text-base font-medium text-white transition hover:bg-primary/80"
-              >
-                Start A Fundraiser!
-              </Link>
+            <div className="w-full px-4">
+              <div className="mx-auto text-center">
+                <a
+                  href="/"
+                  className="inline-flex items-center justify-center rounded-md bg-primary hover:bg-primary/90 scale-100 hover:scale-105 px-7 py-2 text-center text-base font-medium text-white duration-150"
+                >
+                  Start A Fundraiser!
+                </a>
+              </div>
             </div>
-
           </div>
         </div>
       </div>

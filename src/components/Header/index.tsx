@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import menuData from "./menuData";
+import { Avatar, Typography } from "@material-tailwind/react";
 
 const Header = () => {
   const { data: session } = useSession();
@@ -93,7 +94,7 @@ const Header = () => {
                       `${sticky
                         ? "header-logo w-full dark:hidden"
                         : "header-logo w-full hidden"
-                        }`
+                      }`
                     }
                   />
                   <Image
@@ -146,8 +147,8 @@ const Header = () => {
                 id="navbarCollapse"
                 className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark-2 2xl:visible 2xl:static 2xl:w-auto 2xl:border-none 2xl:!bg-transparent 2xl:p-0 2xl:opacity-100 2xl:dark:bg-transparent 
                 ${navbarOpen
-                  ? "bg-blue/50 visibility top-full opacity-100"
-                  : "bg-white invisible top-[120%] opacity-0"
+                    ? "bg-blue/50 visibility top-full opacity-100"
+                    : "bg-white invisible top-[120%] opacity-0"
                   }`}
               >
                 <ul className="block 2xl:ml-8 2xl:flex 2xl:gap-x-12">
@@ -260,6 +261,23 @@ const Header = () => {
         </div>
         {/* {Top Nav Right Buttons} */}
         <div className="hidden flex-1 items-center justify-end pr-8 pl-8 sm:flex">
+          <div className="flex justify-center items-center py-1">
+            <div className="flex items-center gap-4">
+              <Avatar
+                src="https://i.pravatar.cc/150?u=a04258114e29026702d" alt="avatar"
+                placeholder={undefined} // Assuming placeholder can be undefined
+                onPointerEnterCapture={undefined} // Assuming event handlers can be undefined
+                onPointerLeaveCapture={undefined} // Assuming event handlers can be undefined
+              />
+              <div>
+                <Typography as="h6" variant="h6" {...({} as any)}>Tania Andrew</Typography>
+                <Typography as="p" variant="small" color="gray" className="font-normal" {...({} as any)}>
+                  member
+                </Typography>
+              </div>
+            </div>
+          </div>
+          
           {/* theme toggler */}
           {/* <button
                   aria-label="theme toggler"

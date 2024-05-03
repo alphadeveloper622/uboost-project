@@ -5,24 +5,20 @@ import campaignData from "./campaignData";
 
 const Fundraising_Dashboard = () => {
   return (
-    <section
-      id="team"
-      className="overflow-hidden bg-gray-1 pb-12 pt-10 dark:bg-dark-2"
-    >
-      <>
-        <div className="dark:bg-dark relative z-10 overflow-hidden pb-[20px] pt-[80px] md:pt-[80px] lg:pt-[80px]">
-          <div className="from-stroke/0 via-stroke to-stroke/0 dark:via-dark-3 absolute bottom-0 left-0 h-px w-full bg-gradient-to-r"></div>
-          <div className="container">
-            <div className="flex flex-row flex-wrap items-center">
-              <div className="flex flex-row w-full px-4">
-                <div className="">
+    <section>
+      <div className=" bg-gray-50 dark:bg-dark relative z-10 overflow-hidden pb-[20px] pt-[80px] md:pt-[80px] lg:pt-[80px]">
+        <div className="from-stroke/0 via-stroke to-stroke/0 dark:via-dark-3 absolute bottom-0 left-0 h-px w-full bg-gradient-to-r"></div>
+        <div className="container w-full flex-col flex-wrap items-center">
+          <div className="flex flex-row flex-wrap items-center">
+            <div className="flex flex-row w-full items-center justify-center">
+              <div className="scale-100 hover:scale-105 duration-150">
+                <Link href="/settings">
                   <svg
-                    width="52"
-                    height="52"
+                    width="46"
+                    height="46"
                     viewBox="0 0 496.158 496.158"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="fill-current"
                   >
                     <path fill="#3758f9" d="M496.158,248.085c0-137.021-111.07-248.082-248.076-248.082C111.07,0.003,0,111.063,0,248.085
                         c0,137.002,111.07,248.07,248.083,248.07C385.088,496.155,496.158,385.087,496.158,248.085z"/>
@@ -35,68 +31,67 @@ const Fundraising_Dashboard = () => {
                         c-46.697,0-84.552-37.855-84.552-84.553c0-46.695,37.855-84.551,84.552-84.551c46.694,0,84.549,37.855,84.549,84.551
                         C332.629,295.044,294.774,332.899,248.08,332.899z"/>
                   </svg>
-                </div>
-
-                <div className="text-center flex-grow">
-                  <h1 className="text-dark mb-4 text-3xl font-bold dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
-                    Fundraising Dashboard
-                  </h1>
-                </div>
-
-                <div>
-                  <div className="">
-                    <svg width="50"
-                      height="50"
-                      viewBox="0 0 496.158 496.158"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="fill-current">
-                      <circle style={{ fill: "#3758f9" }} cx="242.4" cy="242.4" r="242.4" />
-                      <path style={{ fill: "#3758f9" }} d="M0,242.4C0,376,108,484,242.4,484C376,484,484,376,484,242.4" />
-                      <polygon style={{ fill: "#ffffff" }} points="394.4,202.4 282.4,202.4 282.4,90.4 202.4,90.4 202.4,202.4 90.4,202.4 90.4,282.4 
-	                        202.4,282.4 202.4,394.4 282.4,394.4 282.4,282.4 394.4,282.4 "/>
-                      <polygon style={{ fill: "#ffffff" }} points="282.4,200.8 200.8,282.4 202.4,282.4 202.4,394.4 282.4,394.4 282.4,282.4 394.4,282.4 
-	                        394.4,202.4 282.4,202.4 "/>
-                    </svg>
-                  </div>
-                </div>
-
-              </div>
-              <div className="flex flex-row w-full px-4 items-center justify-center">
-                <Link href="">
-                  <h4 className="text-center text-primary hover:text-primary/60 text-[8px] sm:text-[11px] md:text-[14px] lg:text-[17px] xl:text-xl 2xl:text-2xl font-medium leading-tight">
-                    Need help starting a campaign? Click here
-                  </h4>
                 </Link>
+              </div>
 
+              <div className="text-center flex-grow">
+                <h1 className="text-dark mb-4 text-3xl font-bold dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
+                  Fundraising Dashboard
+                </h1>
+              </div>
+
+              <div className="scale-100 hover:scale-105 duration-150">
+                <Link href="/new-campaign">
+                  <svg width="45"
+                    height="45"
+                    viewBox="0 0 496.158 496.158"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle style={{ fill: "#3758f9" }} cx="242.4" cy="242.4" r="242.4" />
+                    <path style={{ fill: "#3758f9" }} d="M0,242.4C0,376,108,484,242.4,484C376,484,484,376,484,242.4" />
+                    <polygon style={{ fill: "#ffffff" }} points="394.4,202.4 282.4,202.4 282.4,90.4 202.4,90.4 202.4,202.4 90.4,202.4 90.4,282.4 
+	                        202.4,282.4 202.4,394.4 282.4,394.4 282.4,282.4 394.4,282.4 "/>
+                    <polygon style={{ fill: "#ffffff" }} points="282.4,200.8 200.8,282.4 202.4,282.4 202.4,394.4 282.4,394.4 282.4,282.4 394.4,282.4 
+	                        394.4,202.4 282.4,202.4 "/>
+                  </svg>
+                </Link>
               </div>
             </div>
           </div>
-        </div>
-      </>
-      <div className="mb-12 max-w-full items-center px-2 sm:px-2 md:px-0 lg:px-8 lx:px-10 2xl:px-14 3xl:px-20 sm:pt-4 md:pt-8 lg:pt-10 lx:pt-12 2xl:pt-14 3xl:pt-16">
-        <h2 className="mb-5 text-3xl font-bold text-primary text-center dark:text-white sm:text-[40px] sm:leading-[1.2]">
-          Fundraisers
-        </h2>
-      </div>
-      <div className="px-8 md:px-8 lg:px-12 xl:px-20 2xl:px-32">
-        <div className="grid grid-cols-1 gap-x-12 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-12 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 3xl:grid-cols-4">
-          {campaignData.map((campaign) => (
-            <div key={campaign.id} className="w-full">
-              <SingleCampaign campaign={campaign} />
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="basis-1/2 content-center pt-10">
-        <div className="w-full px-4">
-          <div className="mx-auto text-center">
-            <Link
-              href=""
-              className="inline-block rounded-md border border-transparent w-96 bg-primary px-7 py-3 text-base font-medium text-white transition hover:bg-primary/80"
-            >
-              Show More Campaigns
+          <p className="text-body-color dark:text-dark-6 mb-5 text-base">
+            <Link href="/how-to-create-a-fundraiser">
+              <h4 className="text-center scale-100 hover:scale-105 duration-150 text-primary/90 hover:text-primary text-[8px] sm:text-[11px] md:text-[14px] lg:text-[17px] xl:text-xl 2xl:text-2xl font-medium leading-tight">
+                Need help starting a campaign? Click here
+              </h4>
             </Link>
+          </p>
+        </div>
+      </div>
+      <div className="bg-white sm:pb-4 md:pb-8 lg:pb-10 lx:pb-12 2xl:pb-14 3xl:pb-16">
+        <div className="mb-12 max-w-full items-center px-2 sm:px-2 md:px-0 lg:px-8 lx:px-10 2xl:px-14 3xl:px-20 sm:pt-4 md:pt-8 lg:pt-10 lx:pt-12 2xl:pt-14 3xl:pt-16">
+          <h2 className="mb-5 text-3xl font-bold text-primary text-center dark:text-white sm:text-[40px] sm:leading-[1.2]">
+            Fundraisers
+          </h2>
+        </div>
+        <div className="container">
+          <div className="flex flex-wrap justify-between gap-y-10">
+            {campaignData.map((campaign) => (
+              <div key={campaign.id}>
+                <SingleCampaign campaign={campaign} />
+              </div>
+            ))}
+          </div>
+          <div className="basis-1/2 content-center pt-10">
+            <div className="w-full px-4">
+              <div className="mx-auto text-center">
+                <Link
+                  href=""
+                  className="inline-block rounded-md border border-transparent w-96 bg-primary px-7 py-3 text-base font-medium text-white transition hover:bg-primary/80"
+                >
+                  Show More Campaigns
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
