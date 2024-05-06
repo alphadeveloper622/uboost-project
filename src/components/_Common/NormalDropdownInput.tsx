@@ -43,7 +43,7 @@ const NormalDropdownInput = ({
           }`}>
         <option className={placeholdercolor ? placeholdercolor[0] == '#' ? `text-[${placeholdercolor}]` : 'text-' + placeholdercolor : ''} disabled selected>{placeholder}</option>
         {options.map((option) => (
-          <option id={option}>{option}</option>
+          <option key={option} id={option}>{option}</option>
         ))}
       </select>
     </div>
