@@ -10,7 +10,6 @@ const categoryIcon: { [key: string]: string } = {
 }
 
 const getCampaignIcon = (category: string): string => {
-  console.log(category);
   var url;
   switch (category) {
     case 'Medical':

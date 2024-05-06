@@ -33,6 +33,7 @@ const config: Config = {
       current: 'currentColor',
       'primary': '#0976d9',
       'secondary': '#119bff',
+      'ugary' : '#f8f8f8',
       'ublue': {
         50: '#edfbff',
         100: '#d7f4ff',

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import SectionTitle from "../_Common/SectionTitle";
-import SingleCampaign from "./SingleCampaign";
+import SingleCampaign from "../_Common/SingleCampaign";
 import campaignData from "./campaignData";
 import { usePathname } from "next/navigation";
 
@@ -15,7 +15,7 @@ const Campaigns = () => {
     >
       {pathUrl !== "/" ?
         (<div>
-          
+
         </div>) :
         (<div>
           <SectionTitle
@@ -25,7 +25,7 @@ const Campaigns = () => {
           />
         </div>)}
       <div className="px-8 md:px-8 lg:px-12 xl:px-20 2xl:px-32">
-        <div className="flex flex-wrap justify-between gap-y-10">
+        <div className="flex flex-wrap justify-center gap-y-10 gap-x-10">
           {campaignData.map((campaign) => (
             <div key={campaign.id}>
               <SingleCampaign campaign={campaign} />

@@ -1,6 +1,6 @@
 "use client";
 import { Campaign } from "@/types/campaign";
-import { Button } from "@material-tailwind/react";
+import { Button } from "@nextui-org/react";
 
 import Image from "next/image";
 import getCampaignIcon from "@/components/_Common/CampaignCategoryIcon";
@@ -11,7 +11,7 @@ const SingleCampaign = ({ campaign }: { campaign: Campaign }) => {
   const { title, category, image, paragraph, fundraiser, goal, raised, createdDate } = campaign;
   return (
     <>
-      <div className="w-[400px] relative overflow-hidden border-2  rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark">
+      <div className="w-[400px] relative overflow-hidden border-2  rounded-md bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark">
         <div className="container p-0 m-0 space-x-0 space-y-0 bg-dark/20">
           <div className="relative block aspect-[16/9] w-full bg-dark/20">
             <span className="absolute right-6 top-6 inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 md:text-[10px] lg:text-[10px] xl:text-[12px] 2xl:text-[12px] font-semibold capitalize text-white">
@@ -74,6 +74,7 @@ const SingleCampaign = ({ campaign }: { campaign: Campaign }) => {
             {paragraph}
           </p>
           <div className="">
+
             <div className="z-100 relative w-full bg-gray-200 h-2">
               <div
                 className="absolute h-full top-0 bg-gradient-to-r from-ublue-600 to-primary"
@@ -81,6 +82,7 @@ const SingleCampaign = ({ campaign }: { campaign: Campaign }) => {
               >
               </div>
             </div>
+
             <div className="flex flex-row py-2 px-2">
               <div className="flex flex-1">
                 <p className='text-dark/70 font-medium'>Goal:</p>
@@ -95,8 +97,16 @@ const SingleCampaign = ({ campaign }: { campaign: Campaign }) => {
             </div>
           </div>
           <div className="w-full justify-center inline-flex">
-            <a href="...undefined link..." className="flex w-3/5 p-4">
-              <Button className="flex-1 bg-primary hover:bg-primary/80" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>Start a Campaign</Button>
+            <a href="...undefined link..." className="flex w-3/5 justify-center p-4">
+              <Button
+                variant="solid"
+                size="md"
+                color="primary"
+                onClick={(e) => { }}
+                className="text-white rounded-md"
+              >
+                Start a Campaign
+              </Button>
             </a>
           </div>
         </div>

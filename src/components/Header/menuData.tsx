@@ -120,6 +120,12 @@ const menuData: Menu[] = [
         path: "/campaign-detail",
         newTab: false,
       },
+      {
+        id: 91,
+        title: "Membership Options",
+        path: "/membership-options",
+        newTab: false,
+      },
     ],
   },
 ];

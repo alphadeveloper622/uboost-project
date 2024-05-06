@@ -4,12 +4,15 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Avatar, Typography } from "@material-tailwind/react";
+import { Button } from "@nextui-org/react";
 import {
   Accordion,
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
 import Loader from "@/components/_Common/Loader";
+import NormalTitle from "@/components/_Common/NormalTitle";
+import getNormalLinkIcon from "@/components/_Common/NormalLinkIcons";
 
 function AccordionIcon({ id, open }: { id: any, open: any }) {
   return (
@@ -42,64 +45,21 @@ function AccordionLinkIcon({ linkurl }: { linkurl: string }) {
 }
 
 const Settings = () => {
-  const router = useRouter();
-  const [loading, setLoading] = useState(false);
   const [open, setOpen] = useState(0);
   const [sendingmessage, setSendingMessage] = useState(false);
   const [sendingcode, setSendingCode] = useState(false);
-  
+
   const handleOpen = (value: number) => setOpen(open === value ? 0 : value);
 
   return (
-    <section className="bg-[#F4F7FF]">
-      <div className="bg-gray-50 dark:bg-dark relative z-10 overflow-hidden pb-[20px] pt-[80px] md:pt-[80px] lg:pt-[80px]">
-        <div className="from-stroke/0 via-stroke to-stroke/0 dark:via-dark-3 absolute bottom-0 left-0 h-px w-full bg-gradient-to-r"></div>
-        <div className="container w-full flex-col flex-wrap items-center">
-          <div className="flex flex-row flex-wrap items-center">
-            <div className="flex flex-row w-full items-center justify-center">
-              <div className="scale-100 hover:scale-105 duration-150">
-                <Link href="/fundraising-dashboard">
-                  <svg fill="#3758f9" width="46" height="46" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 330 330" xmlSpace="preserve">
-                    <path id="XMLID_6_" d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M205.606,234.394
-	                          c5.858,5.857,5.858,15.355,0,21.213C202.678,258.535,198.839,260,195,260s-7.678-1.464-10.606-4.394l-80-79.998
-	                          c-2.813-2.813-4.394-6.628-4.394-10.606c0-3.978,1.58-7.794,4.394-10.607l80-80.002c5.857-5.858,15.355-5.858,21.213,0
-	                          c5.858,5.857,5.858,15.355,0,21.213l-69.393,69.396L205.606,234.394z"/>
-                  </svg>
-                </Link>
-              </div>
-
-              <div className="text-center flex-grow">
-                <h1 className="text-dark mb-4 text-3xl font-bold dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
-                  Settings
-                </h1>
-              </div>
-
-              <div className="scale-100 hover:scale-105 duration-150">
-                <Link href="">
-                  <svg width="45"
-                    height="45"
-                    viewBox="0 0 496.158 496.158"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    {/* <circle style={{ fill: "#3758f9" }} cx="242.4" cy="242.4" r="242.4" />
-                    <path style={{ fill: "#3758f9" }} d="M0,242.4C0,376,108,484,242.4,484C376,484,484,376,484,242.4" />
-                    <polygon style={{ fill: "#ffffff" }} points="394.4,202.4 282.4,202.4 282.4,90.4 202.4,90.4 202.4,202.4 90.4,202.4 90.4,282.4 
-	                        202.4,282.4 202.4,394.4 282.4,394.4 282.4,282.4 394.4,282.4 "/>
-                    <polygon style={{ fill: "#ffffff" }} points="282.4,200.8 200.8,282.4 202.4,282.4 202.4,394.4 282.4,394.4 282.4,282.4 394.4,282.4 
-	                        394.4,202.4 282.4,202.4 "/> */}
-                  </svg>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <p className="text-body-color dark:text-dark-6 mb-5 text-base">
-            <h4 className="text-center text-primary text-[8px] sm:text-[11px] md:text-[14px] lg:text-[17px] xl:text-xl 2xl:text-2xl font-medium leading-tight">
-
-            </h4>
-          </p>
-        </div>
-      </div>
+    <section className="bg-gradient-to-t from-ublue-100 to-ublue-50">
+      <NormalTitle id="top title" title="Settings"
+        description={""}
+        description_link=""
+        left_link={getNormalLinkIcon('Back', '/fundraising-dashboard')}
+        right_link={getNormalLinkIcon('', '')}
+        bg_color="#FFFFFF"
+      />
 
       <div className="container py-[5rem]">
         <div className="flex flex-wrap justify-center">
@@ -107,7 +67,7 @@ const Settings = () => {
             <div
               className="wow fadeInUp relative mx-auto max-w-[600px] overflow-hidden rounded-lg bg-white px-8 py-14 text-center dark:bg-dark-2 sm:px-12 md:px-[60px]"
               data-wow-delay=".15s">
-              <div className="flex justify-center items-center py-5">
+              {/* <div className="flex justify-center items-center py-5">
                 <div className="flex items-center gap-4">
                   <Avatar
                     src="https://i.pravatar.cc/150?u=a04258114e29026702d" alt="avatar" variant="rounded"
@@ -122,7 +82,7 @@ const Settings = () => {
                     </Typography>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="py-5">
                 <Accordion open={open === 1} icon={<AccordionIcon id={1} open={open} />}
                   placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
