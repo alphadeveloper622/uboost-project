@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import SectionTitle from "../_Common/SectionTitle";
+import SectionTitle from "@/components/_Common/SectionTitle";
 
 const More = () => {
   const [isOpen, setOpen] = useState(false);

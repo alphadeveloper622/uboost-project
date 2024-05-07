@@ -16,11 +16,11 @@ const Fundraisng_Detail = () => {
     category: 'Sports',
     image: '/images/campaign detail/avatar.jpg',
     video: 'https://zuboost.s3.us-east-1.amazonaws.com/3f633f11-fd74-463c-988c-f32dad76e76b.mp4',
-    paragraph: 'We will embrace a new world with youth and hope. Please donate to us.',
+    comment: 'We will embrace a new world with youth and hope. Please donate to us.',
     fundraiser: {
       name: 'Fort Bend Texas Heat',
       image: '/images/campaign detail/avatar.jpg',
-      designation: 'member',
+      description: 'member',
     },
     goal: 20000,
     raised: 14000,

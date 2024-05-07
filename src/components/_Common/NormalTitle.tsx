@@ -40,7 +40,11 @@ const NormalTitle = ({
               {left_link}
             </div>
             <div className="text-center flex-grow">
-              <p className={`mb-4 text-3xl font-bold sm:text-4xl md:text-[40px] md:leading-[1.2] ${title_color == "black" ? "text-black" : `text-[${title_color}]`}`} style={{ textAlign: title_direction }}>
+              <p className={`mb-4 text-3xl font-bold sm:text-4xl md:text-[40px] md:leading-[1.2] 
+                ${title_color == "black" ? "text-black" : `text-[${title_color}]`} 
+                ${title_direction === 'left' ? 'text-left' :
+                  title_direction === 'center' ? 'text-center' :
+                    title_direction === 'right' ? 'text-right' : ''}`}>
                 {title}
               </p>
             </div>
@@ -49,24 +53,28 @@ const NormalTitle = ({
             </div>
           </div>
         </div>
-        <div className="flex flex-row justify-center items-center mb-5 text-base" style={{ textAlign: description_direction }}>
+        <div className={`flex flex-row justify-center items-center mb-5 text-base 
+            ${description_direction === 'left' ? 'text-left' :
+              description_direction === 'center' ? 'text-center' :
+              description_direction === 'right' ? 'text-right' : ''}`}>
           {description_icon ?
             (<div>
               {description_icon} &nbsp;&nbsp;
             </div>) :
             (<div />)}
-            <div
-              className={`text-center text-[8px] sm:text-[11px] md:text-[14px] lg:text-[17px] xl:text-xl 2xl:text-2xl font-medium leading-tight ${description_color == "primary" ? "text-primary" : `text-[${description_color}]`}`}>
-                {description_link ? (
-                  <Link href={description_link || ""} className="hover:underline">
-                    {description}
-                  </Link>
-                ):(
-                  <>
-                    {description}
-                  </>
-                )}
-            </div>
+          <div
+            className={`text-center text-[8px] sm:text-[11px] md:text-[14px] lg:text-[17px] xl:text-xl 2xl:text-2xl font-medium leading-tight 
+            ${description_color == "primary" ? "text-primary" : `text-[${description_color}]`}`}>
+            {description_link ? (
+              <Link href={description_link || ""} className="hover:underline">
+                {description}
+              </Link>
+            ) : (
+              <>
+                {description}
+              </>
+            )}
+          </div>
         </div>
       </div>
     </div>

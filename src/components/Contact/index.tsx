@@ -1,4 +1,4 @@
-import SectionTitle from "../_Common/SectionTitle";
+import SectionTitle from "@/components/_Common/SectionTitle";
 import NewsLatterBox from "./NewsLatterBox";
 
 const Contact = () => {

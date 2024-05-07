@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const SingleCampaign = ({ campaign }: { campaign: Campaign }) => {
   const [isOpen, setOpen] = useState(false);
-  const { title, category, image, paragraph, fundraiser, goal, raised, createdDate } = campaign;
+  const { title, category, image, comment, fundraiser, goal, raised, createdDate } = campaign;
   return (
     <>
       <div className="w-[400px] relative overflow-hidden border-2  rounded-md bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark">
@@ -60,7 +60,7 @@ const SingleCampaign = ({ campaign }: { campaign: Campaign }) => {
                 <h4 className="text-sm font-medium text-dark dark:text-white">
                   By {fundraiser.name}
                 </h4>
-                <p className="text-xs text-body-color">{fundraiser.designation}</p>
+                <p className="text-xs text-body-color">{fundraiser.description}</p>
               </div>
             </div>
             <div className="inline-block">
@@ -71,7 +71,7 @@ const SingleCampaign = ({ campaign }: { campaign: Campaign }) => {
             </div>
           </div>
           <p className="p-4 truncate font-medium text-body-color dark:border-white dark:border-opacity-10">
-            {paragraph}
+            {comment}
           </p>
           <div className="">
 

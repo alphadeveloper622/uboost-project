@@ -14,7 +14,7 @@ import NormalFormDecoration from '@/components/_Common/NormalFormDecoration'
 import NormalDateInput from '@/components/_Common/NormalDateInput'
 import CommonIcons from "@/components/_Common/CommonIcons";
 import { Checkbox as RawCheckbox } from "@material-tailwind/react";
-import getCommonIcons from '../../_Common/CommonIcons';
+import getCommonIcons from '@/components/_Common/CommonIcons';
 const Checkbox: any = RawCheckbox;
 
 const Add_New_Profile2 = () => {

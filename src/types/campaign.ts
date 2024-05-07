@@ -1,14 +1,14 @@
-type FundRaiser = {
+export type FundRaiser = {
   name: string;
   image: string;
-  designation: string;
+  description: string;
 };
 
 export type Campaign = {
   id: number;
   title: string;
   category: string;
-  paragraph: string;
+  comment: string;
   image: string;
   video: string;
   fundraiser: FundRaiser;

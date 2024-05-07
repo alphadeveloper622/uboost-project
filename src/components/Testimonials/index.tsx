@@ -1,7 +1,7 @@
 'use client'
 import { useRef, useState } from 'react';
 import testimonialData from "./testimonialData";
-import SectionTitle from '../_Common/SectionTitle';
+import SectionTitle from '@/components/_Common/SectionTitle';
 import SingleTestimonial from './SingleTestimonial';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';

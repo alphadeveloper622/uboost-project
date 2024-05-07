@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
-import SectionTitle from "../_Common/SectionTitle";
-import SingleCampaign from "../_Common/SingleCampaign";
+import SectionTitle from "@/components/_Common/SectionTitle";
+import SingleCampaign from "@/components/_Common/SingleCampaign";
 import campaignData from "./campaignData";
 import { usePathname } from "next/navigation";
 
@@ -24,7 +24,8 @@ const Campaigns = () => {
             center
           />
         </div>)}
-      <div className="px-8 md:px-8 lg:px-12 xl:px-20 2xl:px-32">
+        {/* className="px-8 md:px-8 lg:px-12 xl:px-20 2xl:px-32" */}
+      <div >
         <div className="flex flex-wrap justify-center gap-y-10 gap-x-10">
           {campaignData.map((campaign) => (
             <div key={campaign.id}>
@@ -33,7 +34,7 @@ const Campaigns = () => {
           ))}
         </div>
       </div>
-      <div className="basis-1/2 content-center pt-10">
+      {/* <div className="basis-1/2 content-center pt-10">
         <div className="w-full px-4">
           <div className="mx-auto text-center">
             <a
@@ -44,7 +45,7 @@ const Campaigns = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

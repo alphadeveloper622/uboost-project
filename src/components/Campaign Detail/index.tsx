@@ -10,97 +10,53 @@ import {
 } from "@material-tailwind/react";
 
 import Image from "next/image";
+import { Button } from "@nextui-org/react";
+
 import getCampaignIcon from "@/components/_Common/CampaignCategoryIcon";
 import { useState } from "react";
-import Link from "next/link";
+import getNormalLinkIcon from "@/components/_Common/NormalLinkIcons";
+import getCommonIcons from "@/components/_Common/CommonIcons";
+import NormalTopBarUserInfo from "@/components/_Common/NormalTopBarUserInfo";
 
 const Campaign_Detail = ({ campaign }: { campaign: Campaign }) => {
   const [isOpen, setOpen] = useState(false);
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+  const [dropdownClicked, setDropdownClicked] = useState(false);
+  const [isViewingImage, setViewingImage] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownVisible(!isDropdownVisible);
+    setDropdownClicked(!dropdownClicked); // Toggle the click state as well
+  };
+
+  const closeDropdown = () => {
+    setDropdownVisible(false);
+    setDropdownClicked(false);
+  };
+
+  const viewImage = () => {
+    setViewingImage(true);
+    closeDropdown();
+  };
+
+  const closeImage = () => {
+    setViewingImage(false);
+  };
 
   return (
-    <section>
-      <div className="bg-gray-50 dark:bg-dark relative z-10 overflow-hidden pb-[20px] pt-[80px] md:pt-[80px] lg:pt-[80px]">
-        <div className="from-stroke/0 via-stroke to-stroke/0 dark:via-dark-3 absolute bottom-0 left-0 h-px w-full bg-gradient-to-r"></div>
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <div className="w-full px-4">
-              <div className="text-center">
-                <h1 className="text-dark mb-4 text-3xl font-bold dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
-                  <div className="flex flex-row flex-wrap items-center">
-                    <div className="flex flex-row w-full px-4 items-center justify-center">
-                    <div className="scale-100 hover:scale-105 duration-150">
-                        <Link href="">
-                          <svg
-                            width="46"
-                            height="46"
-                            viewBox="0 0 496.158 496.158"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path fill="#3758f9" d="M496.158,248.085c0-137.021-111.07-248.082-248.076-248.082C111.07,0.003,0,111.063,0,248.085
-                                c0,137.002,111.07,248.07,248.083,248.07C385.088,496.155,496.158,385.087,496.158,248.085z"/>
-                            <path fill="#FFFFFF" d="M408.326,267.403v-38.649l-36.572-11.494c-3.107-12.406-8.03-24.09-14.476-34.756l17.779-34.071
-                                l-27.332-27.33l-34.171,17.828c-10.621-6.372-22.247-11.236-34.588-14.309l-11.562-36.789h-38.652l-11.562,36.789
-                                c-12.338,3.072-23.965,7.937-34.586,14.309l-34.172-17.828l-27.331,27.332l17.778,34.069c-6.444,10.666-11.367,22.35-14.472,34.756
-                                l-36.575,11.494v38.649l36.431,11.451c3.078,12.524,7.997,24.32,14.468,35.084l-17.63,33.784l27.332,27.331l33.688-17.575
-                                c10.803,6.546,22.659,11.523,35.251,14.636l11.379,36.211h38.652l11.38-36.211c12.593-3.112,24.448-8.09,35.254-14.636
-                                l33.688,17.575l27.332-27.331l-17.628-33.784c6.47-10.764,11.389-22.56,14.466-35.084L408.326,267.403z M248.08,332.899
-                                c-46.697,0-84.552-37.855-84.552-84.553c0-46.695,37.855-84.551,84.552-84.551c46.694,0,84.549,37.855,84.549,84.551
-                                C332.629,295.044,294.774,332.899,248.08,332.899z"/>
-                          </svg>
-                        </Link>
-                      </div>
-
-                      <div className="text-center flex-grow">
-                        <div className="flex flex-row items-center justify-center">
-                          <div className="relative h-28 w-28 mr-10"> {/* Adjust the size to your liking */}
-                            <Image
-                              src={campaign.image} // The path to your image
-                              alt="user image"
-                              layout="fill" // This makes the image fill the container
-                              objectFit="cover" // This crops the image to cover the area
-                              className="rounded-lg" // Example Tailwind class for rounded corners
-                            />
-                          </div>
-                          <div className="flex flex-col">
-                            <div className="">
-                              <h4 className="text-center text-primary text-[8px] sm:text-sm md:text-md lg:text-xl xl:text-2xl 2xl:text-3xl font-medium leading-tight">
-                                {campaign.fundraiser.name}
-                              </h4>
-                            </div>
-                            <div className="">
-                              <h4 className="text-center text-gray-800 text-[8px] sm:text-[11px] md:text-[14px] lg:text-[17px] xl:text-xl 2xl:text-2xl font-medium leading-tight">
-                                {campaign.fundraiser.designation}
-                              </h4>
-                            </div>
-                            <div className="">
-                              <h4 className="text-center text-gray-800 text-[8px] sm:text-[11px] md:text-[14px] lg:text-[17px] xl:text-xl 2xl:text-2xl font-medium leading-tight">
-                                {campaign.title}
-                              </h4>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-
-                      <div className="scale-100 hover:scale-105 duration-150">
-                        <svg fill="#3758f9" width="55" height="55" viewBox="-1 0 19 19" xmlns="http://www.w3.org/2000/svg"
-                          className="cf-icon-svg">
-                          <path
-                            d="M16.417 9.583A7.917 7.917 0 1 1 8.5 1.666a7.917 7.917 0 0 1 7.917 7.917zm-2.792-1.198a.396.396 0 0 0-.149-.54L8.661 5.104a.396.396 0 0 0-.393 0l-2.31 1.324v-.895a.318.318 0 0 0-.317-.317h-.968a.318.318 0 0 0-.317.317v1.813l-.872.5a.396.396 0 1 0 .393.686l4.589-2.629 4.619 2.63a.395.395 0 0 0 .54-.148zm-1.02.786L8.467 6.815l-4.11 2.356v4.465a.318.318 0 0 0 .316.317h7.615a.318.318 0 0 0 .317-.317zm-6.647.607h1.647v1.668H5.958zm5.045 1.668H9.356V9.778h1.647z" />
-                        </svg>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="bg-gray-100 relative flex flex-row sm:pb-4 md:pb-8 lg:pb-10 lx:pb-12 2xl:pb-14 3xl:pb-16 px-12 sm:px-20 md:px-24 lg:px-28 lx:px-32 2xl:px-36 3xl:px-40 pt-2 lx:pt-4 2xl:pt-6 3xl:pt-8">
+    <section className="bg-gradient-to-t from-ublue-100 to-ublue-50">
+      <NormalTopBarUserInfo
+        username={"Fort Bend Texas Heat"}
+        avatar={"/images/campaign detail/avatar.jpg"}
+        status={"Member"}
+        information={""}
+        changable_avatar={true}
+        username_color={'primary'}
+        left_link={getNormalLinkIcon('Setting', '/settings')}
+        right_link={getNormalLinkIcon('Home', '/fundraising-dashboard')}
+        username_direction="left"
+        status_direction="left" />
+      <div className="relative flex flex-row flex-wrap sm:pb-4 md:pb-8 lg:pb-10 lx:pb-12 2xl:pb-14 3xl:pb-16 px-12 sm:px-20 md:px-24 lg:px-28 lx:px-32 2xl:px-36 3xl:px-40 pt-2 lx:pt-4 2xl:pt-6 3xl:pt-8">
         <div className="w-full sm:w-full md:w-full 2xl:w-1/2 px-0 sm:px-0 md:px-4 lg:px-8 lx:px-12 2xl:px-16 3xl:px-20 pt-2 lx:pt-4 2xl:pt-6 3xl:pt-8">
           <div className="relative overflow-hidden border-2  rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark">
             <div className="container p-0 m-0 space-x-0 space-y-0 bg-dark/20">
@@ -119,22 +75,31 @@ const Campaign_Detail = ({ campaign }: { campaign: Campaign }) => {
                     </video>
                   ) : (
                     <div className="relative bg-black aspect-[16/9] items-center justify-center">
-                      <div className=" opacity-65">
-                        <Image src={campaign.image} alt="campaign image" fill />
+                      <div className="opacity-65">
+                        <Image id="campaign_image" src={campaign.image} alt="campaign image" fill />
                       </div>
-                      <div className="absolute right-0 top-0 flex h-full w-full items-center justify-center">
+                      <div className="absolute right-0 top-0 gap-x-20 flex h-full w-full items-center justify-center">
                         <button aria-label="video play button"
                           onClick={() => setOpen(true)}
-                          className="z-10 flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-50 text-primary transition hover:bg-opacity-70">
-                          <svg
-                            width="16"
-                            height="18"
-                            viewBox="0 0 16 18"
-                            className="fill-current"
-                          >
-                            <path d="M15.5 8.13397C16.1667 8.51888 16.1667 9.48112 15.5 9.86602L2 17.6603C1.33333 18.0452 0.499999 17.564 0.499999 16.7942L0.5 1.20577C0.5 0.43597 1.33333 -0.0451549 2 0.339745L15.5 8.13397Z" />
-                          </svg>
+                          className="z-10 flex scale-100 hover:scale-105 duration-150 h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-50 text-primary transition hover:bg-opacity-70">
+                          {getCommonIcons('VideoPlay', 16, 18)}
                         </button>
+                        <button aria-label="video play button"
+                          onClick={toggleDropdown}
+                          className="z-10 flex scale-100 hover:scale-105 duration-150 h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-50 text-primary transition hover:bg-opacity-70">
+                          {getCommonIcons('Edit', 25, 25)}
+                          {isDropdownVisible && (
+                            <div className="z-40 absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full w-auto min-w-max overflow-visible bg-primary/80 text-white shadow-lg rounded-lg tooltip">
+                              <div className="tooltip-arrow" style={{ position: 'absolute', top: '-9px', left: '50%', transform: 'translateX(-50%)', width: '10px', height: '10px', backgroundColor: 'inherit', clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)' }}></div>
+                              <div className="p-2">
+                                <div className="hover:bg-gray-700 p-1 rounded" onClick={viewImage}>View Photo</div>
+                                <div className="hover:bg-gray-700 p-1 rounded">Upload Photo</div>
+                                <div className="hover:bg-gray-700 p-1 rounded">Remove Photo</div>
+                              </div>
+                            </div>
+                          )}
+                        </button>
+
                       </div>
                       <div className="absolute left-0 bottom-0 w-full h-40 inline-flex items-center justify-stretch bg-gradient-to-t from-dark/60 to-white/0 px-4 py-2 capitalize" />
                     </div>
@@ -168,7 +133,7 @@ const Campaign_Detail = ({ campaign }: { campaign: Campaign }) => {
                 <div className="basis-2/12"></div>
               </div>
               <p className="p-4 truncate font-medium text-body-color dark:border-white dark:border-opacity-10">
-                {campaign.paragraph}
+                {campaign.comment}
               </p>
               <div className="">
                 <div className="z-100 relative w-full bg-gray-200 h-2">
@@ -191,6 +156,17 @@ const Campaign_Detail = ({ campaign }: { campaign: Campaign }) => {
                     <p className='text-dark font-extrabold'>{campaign.raised}</p>
                   </div>
                 </div>
+              </div>
+              <div className="flex justify-center items-center py-5">
+                <Button
+                  variant="solid"
+                  size="md"
+                  color="primary"
+                  onClick={(e) => { }}
+                  className="text-white rounded-md w-3/5"
+                >
+                  Tag
+                </Button>
               </div>
             </div>
           </div>
@@ -271,6 +247,12 @@ const Campaign_Detail = ({ campaign }: { campaign: Campaign }) => {
           </Tabs>
         </div>
       </div>
+      {isViewingImage && (
+        <div className="z-100  fixed inset-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <button onClick={closeImage} className="absolute right-10 top-10 text-white text-2xl">&times;</button>
+          <Image id="campaign_image" src={campaign.image} alt="campaign image" width={1600} height={900} />
+        </div>
+      )}
     </section>
   );
 };

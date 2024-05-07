@@ -10,8 +10,8 @@ import {
   AccordionBody,
 } from "@material-tailwind/react";
 import Loader from "@/components/_Common/Loader";
-import NormalTitle from "../_Common/NormalTitle";
-import getNormalLinkIcon from "../_Common/NormalLinkIcons";
+import NormalTitle from "@/components/_Common/NormalTitle";
+import getNormalLinkIcon from "@/components/_Common/NormalLinkIcons";
 
 function AccordionIcon({ id, open }: { id: any, open: any }) {
   return (

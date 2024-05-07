@@ -3,13 +3,13 @@ import React from "react";
 import Image from "next/image";
 import { useState } from "react";
 import Loader from "@/components/_Common/Loader";
-import NormalTitle from "../_Common/NormalTitle";
-import getNormalLinkIcon from "../_Common/NormalLinkIcons";
-import NormalInput from "../_Common/NormalInput";
-import NormalDropdownInput from "../_Common/NormalDropdownInput";
-import NormalTextInputBox from "../_Common/NormalTextInputBox";
+import NormalTitle from "@/components/_Common/NormalTitle";
+import getNormalLinkIcon from "@/components/_Common/NormalLinkIcons";
+import NormalInput from "@/components/_Common/NormalInput";
+import NormalDropdownInput from "@/components/_Common/NormalDropdownInput";
+import NormalTextInputBox from "@/components/_Common/NormalTextInputBox";
 import { Button } from "@nextui-org/react";
-import getCommonIcons from "../_Common/CommonIcons";
+import getCommonIcons from "@/components/_Common/CommonIcons";
 
 const categorylist = ["Animals", "Athletics", "Education", "Emergency", "Environment", "Faith", "Family", "Legal", "Medical", "Memorial", "Non-Profit"];
 
@@ -51,7 +51,7 @@ const Add_New_Campaign = () => {
                     (<div>
                       <button aria-label="video play button"
                         onClick={() => { }}
-                        className="z-30 flex scale-100 hover:scale-105 duration-150 h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-50 text-primary transition hover:bg-opacity-70">
+                        className="z-30 flex scale-100 hover:scale-105 h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-50 text-primary transition hover:bg-opacity-70">
                         {getCommonIcons('VideoPlay', 16, 18)}
                       </button>
                     </div>
