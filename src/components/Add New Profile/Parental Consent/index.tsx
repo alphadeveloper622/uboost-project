@@ -15,10 +15,9 @@ const Parental_Consent = () => {
   return (
     <section className="bg-gradient-to-t from-ublue-100 to-ublue-50">
       <NormalTitle id="top title" title="Add New Profile1"
-        description={""}
-        description_link=""
-        left_link={getNormalLinkIcon('Back', '/Parental Consent')}
-        right_link={getNormalLinkIcon('', '')}
+        left_link_name={'Back'}
+        left_link_url={'/add-new-profile/Parental Consent'}
+        left_link_icon={getNormalLinkIcon('Back')}
         bg_color="#FFFFFF"
       />
       <div className="bg-gray-100 relative flex justify-center sm:pb-4 md:pb-8 lg:pb-10 lx:pb-12 2xl:pb-14 3xl:pb-16 px-12 sm:px-20 md:px-24 lg:px-28 lx:px-32 2xl:px-36 3xl:px-40 pt-2 lx:pt-4 2xl:pt-6 3xl:pt-8">

@@ -15,7 +15,7 @@ const Fundraisng_Detail = () => {
     title: '2024 FBTXHEAT Basketball Fundraiser ',
     category: 'Sports',
     image: '/images/campaign detail/avatar.jpg',
-    video: 'https://zuboost.s3.us-east-1.amazonaws.com/3f633f11-fd74-463c-988c-f32dad76e76b.mp4',
+    video: 'https://üboost.s3.us-east-1.amazonaws.com/3f633f11-fd74-463c-988c-f32dad76e76b.mp4',
     comment: 'We will embrace a new world with youth and hope. Please donate to us.',
     fundraiser: {
       name: 'Fort Bend Texas Heat',

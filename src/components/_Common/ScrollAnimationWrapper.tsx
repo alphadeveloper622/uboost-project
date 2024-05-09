@@ -1,5 +1,5 @@
 import {motion} from "framer-motion";
-import React from 'react'; // Ensure React is imported for typing
+import React from 'react';
 
 export default function ScrollAnimationWrapper({
   children,

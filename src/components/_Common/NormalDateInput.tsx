@@ -27,7 +27,7 @@ const NormalDateInput = ({
   name_direction?: string;
   input_direction?: string;
 }) => {
-  const safeDate = isValidDate(defaultDate) ? defaultDate : "2024-04-04"; // Fallback to a valid date if provided date is invalid
+  const safeDate = isValidDate(defaultDate) ? defaultDate : "2024-04-04";
   return (
     <div id={id} className={`px-2 mb-8 justify-center ${width === 'full' ? 'w-full' : `w-[${width}]`}`}>
       <label

@@ -18,21 +18,19 @@ const Checkbox: any = RawCheckbox;
 
 const Add_New_Profile1 = () => {
   const [saving, setSaving] = useState(false);
-  const router = useRouter(); // Initialize the useRouter hook
+  const router = useRouter();
 
   const handleContinue = () => {
-    // You can add any other logic you need here before navigating
-    router.push('/add-new-profile2'); // Navigate to the 'add-new-profile1' page
+    router.push('/add-new-profile2');
   };
 
 
   return (
     <section className="bg-gradient-to-t from-ublue-100 to-ublue-50">
       <NormalTitle id="top title" title="Parent / Guardian Consent"
-        description={""}
-        description_link=""
-        left_link={getNormalLinkIcon('Back', '/age-verification')}
-        right_link={getNormalLinkIcon('', '')}
+        left_link_name={'Back'}
+        left_link_url="/add-new-profile/age-verification'"
+        left_link_icon={getNormalLinkIcon('Back')}
         bg_color="#FFFFFF"
       />
       <div className="bg-[#F4F7FF] py-14 dark:bg-dark lg:py-20">
@@ -46,7 +44,7 @@ const Add_New_Profile1 = () => {
                 <div>
                   <div className="flex flex-row mb-5  items-center">
                     <div className="basis-1/12">
-                      {getCommonIcons('Warning', 30, 30)}
+                      {getCommonIcons('Warning', '30', '30')}
                     </div>
                     <div className="basis-11/12 text-primary text-left text-base">
                       Parent or guardian information is needed if the student/member is under 13.
@@ -87,7 +85,7 @@ const Add_New_Profile1 = () => {
                         size="md"
                         color="primary"
                         type="submit"
-                        onClick={handleContinue} // Updated to use handleContinue function
+                        onClick={handleContinue}
                         className="text-white rounded-md w-8/12"
                       >
                         Continue {saving && <Loader />}

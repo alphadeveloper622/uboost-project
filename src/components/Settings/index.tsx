@@ -13,6 +13,8 @@ import {
 import Loader from "@/components/_Common/Loader";
 import NormalTitle from "@/components/_Common/NormalTitle";
 import getNormalLinkIcon from "@/components/_Common/NormalLinkIcons";
+import NoramlFormDecoration from "../_Common/NormalFormDecoration";
+import NormalTextInputBox from "../_Common/NormalTextInputBox";
 
 function AccordionIcon({ id, open }: { id: any, open: any }) {
   return (
@@ -54,10 +56,9 @@ const Settings = () => {
   return (
     <section className="bg-gradient-to-t from-ublue-100 to-ublue-50">
       <NormalTitle id="top title" title="Settings"
-        description={""}
-        description_link=""
-        left_link={getNormalLinkIcon('Back', '/fundraising-dashboard')}
-        right_link={getNormalLinkIcon('', '')}
+        left_link_name={'Back'}
+        left_link_url={'/fundraising-dashboard'}
+        left_link_icon={getNormalLinkIcon('Back')}
         bg_color="#FFFFFF"
       />
 
@@ -67,22 +68,6 @@ const Settings = () => {
             <div
               className="wow fadeInUp relative mx-auto max-w-[600px] overflow-hidden rounded-lg bg-white px-8 py-14 text-center dark:bg-dark-2 sm:px-12 md:px-[60px]"
               data-wow-delay=".15s">
-              {/* <div className="flex justify-center items-center py-5">
-                <div className="flex items-center gap-4">
-                  <Avatar
-                    src="https://i.pravatar.cc/150?u=a04258114e29026702d" alt="avatar" variant="rounded"
-                    placeholder={undefined} // Assuming placeholder can be undefined
-                    onPointerEnterCapture={undefined} // Assuming event handlers can be undefined
-                    onPointerLeaveCapture={undefined} // Assuming event handlers can be undefined
-                  />
-                  <div>
-                    <Typography as="h6" variant="h6" {...({} as any)}>Tania Andrew</Typography>
-                    <Typography as="p" variant="small" color="gray" className="font-normal" {...({} as any)}>
-                      member
-                    </Typography>
-                  </div>
-                </div>
-              </div> */}
               <div className="py-5">
                 <Accordion open={open === 1} icon={<AccordionIcon id={1} open={open} />}
                   placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
@@ -121,20 +106,7 @@ const Settings = () => {
                         Have a question?
                       </h2>
                       <div className="w-full px-2 mb-3">
-                        <div>
-                          <label
-                            htmlFor="message"
-                            className="mb-3 block text-lg font-medium text-dark dark:text-white"
-                          >
-                            How can we help?
-                          </label>
-                          <textarea
-                            name="message"
-                            rows={5}
-                            placeholder="Please leave your question here."
-                            className="border-stroke w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
-                          ></textarea>
-                        </div>
+                        <NormalTextInputBox id="message" name="" placeholder="Please leave your question here." row={6} />
                         <label
                           htmlFor="message"
                           className="mb-3 block text-lg font-medium text-dark dark:text-white"
@@ -284,224 +256,7 @@ const Settings = () => {
                   </AccordionBody>
                 </Accordion>
               </div>
-              <div>
-                <span className="absolute right-1 top-1">
-                  <svg
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle
-                      cx="1.39737"
-                      cy="38.6026"
-                      r="1.39737"
-                      transform="rotate(-90 1.39737 38.6026)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="1.39737"
-                      cy="1.99122"
-                      r="1.39737"
-                      transform="rotate(-90 1.39737 1.99122)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="13.6943"
-                      cy="38.6026"
-                      r="1.39737"
-                      transform="rotate(-90 13.6943 38.6026)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="13.6943"
-                      cy="1.99122"
-                      r="1.39737"
-                      transform="rotate(-90 13.6943 1.99122)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="25.9911"
-                      cy="38.6026"
-                      r="1.39737"
-                      transform="rotate(-90 25.9911 38.6026)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="25.9911"
-                      cy="1.99122"
-                      r="1.39737"
-                      transform="rotate(-90 25.9911 1.99122)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="38.288"
-                      cy="38.6026"
-                      r="1.39737"
-                      transform="rotate(-90 38.288 38.6026)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="38.288"
-                      cy="1.99122"
-                      r="1.39737"
-                      transform="rotate(-90 38.288 1.99122)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="1.39737"
-                      cy="26.3057"
-                      r="1.39737"
-                      transform="rotate(-90 1.39737 26.3057)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="13.6943"
-                      cy="26.3057"
-                      r="1.39737"
-                      transform="rotate(-90 13.6943 26.3057)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="25.9911"
-                      cy="26.3057"
-                      r="1.39737"
-                      transform="rotate(-90 25.9911 26.3057)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="38.288"
-                      cy="26.3057"
-                      r="1.39737"
-                      transform="rotate(-90 38.288 26.3057)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="1.39737"
-                      cy="14.0086"
-                      r="1.39737"
-                      transform="rotate(-90 1.39737 14.0086)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="13.6943"
-                      cy="14.0086"
-                      r="1.39737"
-                      transform="rotate(-90 13.6943 14.0086)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="25.9911"
-                      cy="14.0086"
-                      r="1.39737"
-                      transform="rotate(-90 25.9911 14.0086)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="38.288"
-                      cy="14.0086"
-                      r="1.39737"
-                      transform="rotate(-90 38.288 14.0086)"
-                      fill="#3056D3"
-                    />
-                  </svg>
-                </span>
-                <span className="absolute bottom-1 left-1">
-                  <svg
-                    width="29"
-                    height="40"
-                    viewBox="0 0 29 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle
-                      cx="2.288"
-                      cy="25.9912"
-                      r="1.39737"
-                      transform="rotate(-90 2.288 25.9912)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="14.5849"
-                      cy="25.9911"
-                      r="1.39737"
-                      transform="rotate(-90 14.5849 25.9911)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="26.7216"
-                      cy="25.9911"
-                      r="1.39737"
-                      transform="rotate(-90 26.7216 25.9911)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="2.288"
-                      cy="13.6944"
-                      r="1.39737"
-                      transform="rotate(-90 2.288 13.6944)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="14.5849"
-                      cy="13.6943"
-                      r="1.39737"
-                      transform="rotate(-90 14.5849 13.6943)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="26.7216"
-                      cy="13.6943"
-                      r="1.39737"
-                      transform="rotate(-90 26.7216 13.6943)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="2.288"
-                      cy="38.0087"
-                      r="1.39737"
-                      transform="rotate(-90 2.288 38.0087)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="2.288"
-                      cy="1.39739"
-                      r="1.39737"
-                      transform="rotate(-90 2.288 1.39739)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="14.5849"
-                      cy="38.0089"
-                      r="1.39737"
-                      transform="rotate(-90 14.5849 38.0089)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="26.7216"
-                      cy="38.0089"
-                      r="1.39737"
-                      transform="rotate(-90 26.7216 38.0089)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="14.5849"
-                      cy="1.39761"
-                      r="1.39737"
-                      transform="rotate(-90 14.5849 1.39761)"
-                      fill="#3056D3"
-                    />
-                    <circle
-                      cx="26.7216"
-                      cy="1.39761"
-                      r="1.39737"
-                      transform="rotate(-90 26.7216 1.39761)"
-                      fill="#3056D3"
-                    />
-                  </svg>
-                </span>
-              </div>
+              <NoramlFormDecoration/>
             </div>
           </div>
         </div>

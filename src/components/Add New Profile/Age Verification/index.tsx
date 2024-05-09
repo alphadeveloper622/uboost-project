@@ -17,20 +17,20 @@ import NormalDateInput from "@/components/_Common/NormalDateInput";
 
 const Age_Verification = () => {
   const [saving, setSaving] = useState(false);
-  const router = useRouter(); // Initialize the useRouter hook
+  const router = useRouter();
 
   const handleContinue = () => {
-    // You can add any other logic you need here before navigating
-    router.push('/add-new-profile1'); // Navigate to the 'add-new-profile1' page
+    router.push('/add-new-profile1');
   };
 
   return (
     <section className="bg-gradient-to-t from-ublue-100 to-ublue-50">
-      <NormalTitle id="top title" title="Age Verification"
-        description={""}
-        description_link=""
-        left_link={getNormalLinkIcon('Back', '/membership-options')}
-        right_link={getNormalLinkIcon('', '')}
+      <NormalTitle 
+        id="top title" 
+        title="Age Verification"
+        left_link_name={'Back'}
+        left_link_url={'/add-new-profile/membership-options'}
+        left_link_icon={getNormalLinkIcon('Back')}
         bg_color="#FFFFFF"
       />
       <div className="bg-[#F4F7FF] py-14 dark:bg-dark lg:py-20">
@@ -53,7 +53,7 @@ const Age_Verification = () => {
                         size="md"
                         color="primary"
                         type="submit"
-                        onClick={handleContinue} // Updated to use handleContinue function
+                        onClick={handleContinue}
                         className="text-white rounded-md w-8/12"
                       >
                         Continue {saving && <Loader />}

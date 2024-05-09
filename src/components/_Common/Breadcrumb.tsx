@@ -1,11 +1,11 @@
-import Link from "next/link";
-
-const Breadcrumb = ({
-  pageName,
-  pageDescription,
-}: {
+interface BreadcrumbProps {
   pageName: string;
   pageDescription?: string;
+}
+
+const Breadcrumb: React.FC<BreadcrumbProps> = ({
+  pageName,
+  pageDescription,
 }) => {
   return (
     <>

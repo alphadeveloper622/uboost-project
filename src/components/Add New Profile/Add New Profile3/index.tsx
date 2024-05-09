@@ -18,21 +18,19 @@ const organization_options = ["organization1", "organization2", "organization3",
 
 const Add_New_Profile3 = () => {
   const [saving, setSaving] = useState(false);
-  const router = useRouter(); // Initialize the useRouter hook
+  const router = useRouter();
 
   const handleContinue = () => {
-    // You can add any other logic you need here before navigating
-    router.push('/fundraising-dashboard'); // Navigate to the 'add-new-profile1' page
+    router.push('/fundraising-dashboard');
   };
 
 
   return (
     <section className="bg-gradient-to-t from-ublue-100 to-ublue-50">
       <NormalTitle id="top title" title="Parent / Guardian Consent"
-        description={""}
-        description_link=""
-        left_link={getNormalLinkIcon('Back', '/add-new-profile2')}
-        right_link={getNormalLinkIcon('', '')}
+        left_link_name={'Back'}
+        left_link_url={'/add-new-profile/add-new-profile2'}
+        left_link_icon={getNormalLinkIcon('Back')}
         bg_color="#FFFFFF"
       />
       <div className="bg-[#F4F7FF] py-14 dark:bg-dark lg:py-20">
@@ -67,7 +65,7 @@ const Add_New_Profile3 = () => {
                         size="md"
                         color="primary"
                         type="submit"
-                        onClick={handleContinue} // Updated to use handleContinue function
+                        onClick={handleContinue}
                         className="text-white rounded-md w-8/12"
                       >
                         Continue {saving && <Loader />}

@@ -51,7 +51,7 @@ const SingleFundraiser = (
             </h4>
           </div>
           <div className="basis 1/12 flex-grow pr-3 scale-100 hover:scale-105 duration-150 cursor-pointer">
-            {getCommonIcons('Delete', 50, 50)}
+            {getCommonIcons('Delete', '50', '50')}
           </div>
         </div>
       </div>

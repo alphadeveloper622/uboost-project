@@ -55,10 +55,9 @@ const Help_Center = () => {
   return (
     <section className="bg-gradient-to-t from-ublue-100 to-ublue-50">
       <NormalTitle id="top title" title="Help Center"
-        description="Have a Question?"
-        description_link=""
-        left_link={getNormalLinkIcon('Back', '/fundraising-dashboard')}
-        right_link={getNormalLinkIcon('', '')}
+        left_link_name={'Back'}
+        left_link_url={'/fundraising-dashboard'}
+        left_link_icon={getNormalLinkIcon('Back')}
         bg_color="#FFFFFF"
       />
 

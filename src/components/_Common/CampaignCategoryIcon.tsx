@@ -37,7 +37,7 @@ const getCampaignIcon = (category: string): string => {
       url = categoryIcon.Technology;
       break;
     default:
-      url = ''; // or a default URL if you have one
+      url = '';
       break;
   }
   return url;

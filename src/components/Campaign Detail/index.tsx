@@ -14,9 +14,11 @@ import { Button } from "@nextui-org/react";
 
 import getCampaignIcon from "@/components/_Common/CampaignCategoryIcon";
 import { useState } from "react";
+import { useEffect } from 'react'
 import getNormalLinkIcon from "@/components/_Common/NormalLinkIcons";
 import getCommonIcons from "@/components/_Common/CommonIcons";
 import NormalTopBarUserInfo from "@/components/_Common/NormalTopBarUserInfo";
+import { useRouter } from 'next/navigation';
 
 const Campaign_Detail = ({ campaign }: { campaign: Campaign }) => {
   const [isOpen, setOpen] = useState(false);
@@ -24,9 +26,15 @@ const Campaign_Detail = ({ campaign }: { campaign: Campaign }) => {
   const [dropdownClicked, setDropdownClicked] = useState(false);
   const [isViewingImage, setViewingImage] = useState(false);
 
+  const router = useRouter();
+
+  useEffect(() => {
+
+  }, [])
+
   const toggleDropdown = () => {
     setDropdownVisible(!isDropdownVisible);
-    setDropdownClicked(!dropdownClicked); // Toggle the click state as well
+    setDropdownClicked(!dropdownClicked);
   };
 
   const closeDropdown = () => {
@@ -49,16 +57,20 @@ const Campaign_Detail = ({ campaign }: { campaign: Campaign }) => {
         username={"Fort Bend Texas Heat"}
         avatar={"/images/campaign detail/avatar.jpg"}
         status={"Member"}
+        left_link_name={'Settings'}
+        right_link_name={'Home'}
         information={""}
         changable_avatar={true}
         username_color={'primary'}
-        left_link={getNormalLinkIcon('Setting', '/settings')}
-        right_link={getNormalLinkIcon('Home', '/fundraising-dashboard')}
+        left_link_url = {'/settings'}
+        right_link_url= {'/fundraising-dashboard'}
+        left_link_icon={getNormalLinkIcon('Setting')}
+        right_link_icon={getNormalLinkIcon('Home')}
         username_direction="left"
         status_direction="left" />
       <div className="relative flex flex-row flex-wrap sm:pb-4 md:pb-8 lg:pb-10 lx:pb-12 2xl:pb-14 3xl:pb-16 px-12 sm:px-20 md:px-24 lg:px-28 lx:px-32 2xl:px-36 3xl:px-40 pt-2 lx:pt-4 2xl:pt-6 3xl:pt-8">
         <div className="w-full sm:w-full md:w-full 2xl:w-1/2 px-0 sm:px-0 md:px-4 lg:px-8 lx:px-12 2xl:px-16 3xl:px-20 pt-2 lx:pt-4 2xl:pt-6 3xl:pt-8">
-          <div className="relative overflow-hidden border-2  rounded-sm bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark">
+          <div className="relative overflow-hidden border-2  rounded-md bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark">
             <div className="container p-0 m-0 space-x-0 space-y-0 bg-dark/20">
               <div className="relative block w-full bg-dark/20">
                 <span className="absolute right-6 top-6 inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 md:text-[10px] lg:text-[10px] xl:text-[12px] 2xl:text-[12px] font-semibold capitalize text-white">
@@ -82,12 +94,12 @@ const Campaign_Detail = ({ campaign }: { campaign: Campaign }) => {
                         <button aria-label="video play button"
                           onClick={() => setOpen(true)}
                           className="z-10 flex scale-100 hover:scale-105 duration-150 h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-50 text-primary transition hover:bg-opacity-70">
-                          {getCommonIcons('VideoPlay', 16, 18)}
+                          {getCommonIcons('VideoPlay', '16', '18')}
                         </button>
                         <button aria-label="video play button"
                           onClick={toggleDropdown}
                           className="z-10 flex scale-100 hover:scale-105 duration-150 h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-50 text-primary transition hover:bg-opacity-70">
-                          {getCommonIcons('Edit', 25, 25)}
+                          {getCommonIcons('Edit', '25', '25')}
                           {isDropdownVisible && (
                             <div className="z-40 absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full w-auto min-w-max overflow-visible bg-primary/80 text-white shadow-lg rounded-lg tooltip">
                               <div className="tooltip-arrow" style={{ position: 'absolute', top: '-9px', left: '50%', transform: 'translateX(-50%)', width: '10px', height: '10px', backgroundColor: 'inherit', clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)' }}></div>
@@ -162,7 +174,7 @@ const Campaign_Detail = ({ campaign }: { campaign: Campaign }) => {
                   variant="solid"
                   size="md"
                   color="primary"
-                  onClick={(e) => { }}
+                  onClick={() => router.push('/add-new-tag/create-a-message')}
                   className="text-white rounded-md w-3/5"
                 >
                   Tag

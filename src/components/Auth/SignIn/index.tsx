@@ -6,8 +6,6 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import SocialSignIn from "../SocialSignIn";
-import SwitchOption from "../SwitchOption";
-import MagicLink from "../MagicLink";
 import Loader from "@/components/_Common/Loader";
 import NormalFormDecoration from "@/components/_Common/NormalFormDecoration";
 

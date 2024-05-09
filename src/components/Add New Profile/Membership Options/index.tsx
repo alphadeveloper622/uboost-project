@@ -12,20 +12,20 @@ import getCommonIcons from "@/components/_Common/CommonIcons";
 
 
 const Membership_Options = () => {
-  const router = useRouter(); // Initialize the useRouter hook
+  const router = useRouter();
 
   const handleContinue = () => {
-    // You can add any other logic you need here before navigating
-    router.push('/age-verification'); // Navigate to the 'add-new-profile1' page
+    router.push('/age-verification');
   };
 
   return (
     <section className="bg-gradient-to-t from-ublue-100 to-ublue-50">
-      <NormalTitle id="top title" title="Membership Options"
-        description={""}
-        description_link=""
-        left_link={getNormalLinkIcon('Back', '/signin')}
-        right_link={getNormalLinkIcon('', '')}
+      <NormalTitle 
+        id="top title" 
+        title="Membership Options"
+        left_link_url={'/signin'}
+        left_link_name={'Back'}
+        left_link_icon={getNormalLinkIcon('Back')}
         bg_color="#FFFFFF"
       />
       <div className="bg-[#F4F7FF] py-14 dark:bg-dark lg:py-20">
@@ -41,16 +41,16 @@ const Membership_Options = () => {
                     Choose a Membership
                   </h2>
                   <div className="w-full px-2">
-                    <div className="mb-8 flex flex-row">
-                      <div className="basis-3/12 flex-grow">
-                        {getCommonIcons('Education', 50, 50)}
-                      </div>
-                      <div className="basis-9/12 flex-grow">
-                        <div className="flex flex-col">
-                          <p className="text-left leading-normal text-gray-800 text-md lg:text-lg xl:text-xl 2xl:text-2xl font-medium">
+                    <div className="mb-8 flex flex-row justify-center">
+                      {/* <div className="basis-3/12 flex-grow">
+                        {getCommonIcons('Education', '50', '50')}
+                      </div> */}
+                      <div className="flex-grow">
+                        <div className="flex flex-col ">
+                          <p className="text-center leading-normal text-gray-800 text-md lg:text-lg xl:text-xl 2xl:text-2xl font-medium">
                             Start Free
                           </p>
-                          <p className="text-left leading-normal text-gray-800 text-md lg:text-lg xl:text-xl 2xl:text-2xl font-medium">
+                          <p className="text-center leading-normal text-gray-800 text-md lg:text-lg xl:text-xl 2xl:text-2xl font-medium">
                             Member /Parent /Guardian
                           </p>
                         </div>
@@ -62,7 +62,7 @@ const Membership_Options = () => {
                         size="md"
                         color="primary"
                         type="submit"
-                        onClick={handleContinue} // Updated to use handleContinue function
+                        onClick={handleContinue}
                         className="text-white rounded-md w-8/12">
                         Continue
                       </Button>
