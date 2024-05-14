@@ -52,10 +52,10 @@ const Add_New_Profile1 = () => {
                   </div>
 
                   <div className="w-full px-2">
-                    <NormalInput id="pgname" name="Parent/Guardian full name*" placeholder="Enter your full name" namecolor="black" />
+                    <NormalInput id="pgname" name="Parent/Guardian full name*" placeholder="Enter your full name" name_color="black" />
                     <NormalDateInput id="birthday" name="Birth Date*" defaultDate={""} placeholder={""} />
-                    <NormalInput id="cellnumber" name="Cell number*" placeholder="Enter your cell number" namecolor="black" />
-                    <NormalInput id="email" name="Email*" placeholder="Enter your email" namecolor="black" />
+                    <NormalInput id="cellnumber" name="Cell number*" placeholder="Enter your cell number" name_color="black" />
+                    <NormalInput id="email" name="Email*" placeholder="Enter your email" name_color="black" />
                     <div id="" className='px-2 mb-8 justify-center w-full'>
                       <label
                         htmlFor="name"

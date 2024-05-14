@@ -1,5 +1,4 @@
-import Link from "next/link";
-
+import { resolveFillColor } from "./Common Types";
 
 const getNormalLinkIcon = (iconName: string, iconColor = "white"): JSX.Element => {
   var icon;
@@ -13,7 +12,7 @@ const getNormalLinkIcon = (iconName: string, iconColor = "white"): JSX.Element =
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path className={iconColor === "white" ? "fill-white" : `fill-[${iconColor}]`} d="M408.326,267.403v-38.649l-36.572-11.494c-3.107-12.406-8.03-24.09-14.476-34.756l17.779-34.071
+          <path className={resolveFillColor({color:iconColor})} d="M408.326,267.403v-38.649l-36.572-11.494c-3.107-12.406-8.03-24.09-14.476-34.756l17.779-34.071
                     l-27.332-27.33l-34.171,17.828c-10.621-6.372-22.247-11.236-34.588-14.309l-11.562-36.789h-38.652l-11.562,36.789
                     c-12.338,3.072-23.965,7.937-34.586,14.309l-34.172-17.828l-27.331,27.332l17.778,34.069c-6.444,10.666-11.367,22.35-14.472,34.756
                     l-36.575,11.494v38.649l36.431,11.451c3.078,12.524,7.997,24.32,14.468,35.084l-17.63,33.784l27.332,27.331l33.688-17.575
@@ -30,17 +29,17 @@ const getNormalLinkIcon = (iconName: string, iconColor = "white"): JSX.Element =
           viewBox="0 0 496.158 496.158"
           fill="none"
           xmlns="http://www.w3.org/2000/svg">
-          <circle className={iconColor === "primary" ? "fill-primary" : "fill-[${iconColor}]"} cx="242.4" cy="242.4" r="242.4" />
-          <path className={iconColor === "primary" ? "fill-primary" : "fill-[${iconColor}]"} d="M0,242.4C0,376,108,484,242.4,484C376,484,484,376,484,242.4" />
-          <polygon style={{ fill: "#ffffff" }} points="394.4,202.4 282.4,202.4 282.4,90.4 202.4,90.4 202.4,202.4 90.4,202.4 90.4,282.4 
+          <circle className={resolveFillColor({color:'primary'})} cx="242.4" cy="242.4" r="242.4" />
+          <path className={resolveFillColor({color:'primary'})} d="M0,242.4C0,376,108,484,242.4,484C376,484,484,376,484,242.4" />
+          <polygon className={resolveFillColor({color:'white'})} points="394.4,202.4 282.4,202.4 282.4,90.4 202.4,90.4 202.4,202.4 90.4,202.4 90.4,282.4 
                     202.4,282.4 202.4,394.4 282.4,394.4 282.4,282.4 394.4,282.4 "/>
-          <polygon style={{ fill: "#ffffff" }} points="282.4,200.8 200.8,282.4 202.4,282.4 202.4,394.4 282.4,394.4 282.4,282.4 394.4,282.4 
+          <polygon className={resolveFillColor({color:'white'})} points="282.4,200.8 200.8,282.4 202.4,282.4 202.4,394.4 282.4,394.4 282.4,282.4 394.4,282.4 
                     394.4,202.4 282.4,202.4 "/>
         </svg>
       break;
     case 'Back':
       icon =
-        <svg className={iconColor === "white" ? "fill-white" : "fill-[${iconColor}]"} width="30" height="30" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        <svg className={resolveFillColor({color:iconColor})} width="30" height="30" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 492 492" xmlSpace="preserve">
           <path d="M198.608,246.104L382.664,62.04c5.068-5.056,7.856-11.816,7.856-19.024c0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12
                   C361.476,2.792,354.712,0,347.504,0s-13.964,2.792-19.028,7.864L109.328,227.008c-5.084,5.08-7.868,11.868-7.848,19.084
@@ -50,7 +49,7 @@ const getNormalLinkIcon = (iconName: string, iconColor = "white"): JSX.Element =
       break;
     case 'Forward':
       icon =
-        <svg className={iconColor === "white" ? "fill-white" : "fill-[${iconColor}]"} width="30" height="30" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        <svg className={resolveFillColor({color:iconColor})} width="30" height="30" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 492 492" xmlSpace="preserve">
           <path d="M198.608,246.104L382.664,62.04c5.068-5.056,7.856-11.816,7.856-19.024c0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12
                 C361.476,2.792,354.712,0,347.504,0s-13.964,2.792-19.028,7.864L109.328,227.008c-5.084,5.08-7.868,11.868-7.848,19.084
@@ -60,7 +59,7 @@ const getNormalLinkIcon = (iconName: string, iconColor = "white"): JSX.Element =
       break;
     case 'Home':
       icon =
-        <svg className={iconColor === "white" ? "fill-white" : "fill-[${iconColor}]"} width="42" height="42" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg className={resolveFillColor({color:iconColor})} width="42" height="42" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M3.018,10.982,3,11H5v9a1,1,0,0,0,1,1H18a1,1,0,0,0,1-1V11h2l-.018-.018a.986.986,0,0,0,.85-.427,1,1,0,0,0-.278-1.387l-9-6a1,1,0,0,0-1.11,0L8,5.465V4A1,1,0,0,0,6,4V6.8L2.446,9.168a1,1,0,0,0-.278,1.387A.983.983,0,0,0,3.018,10.982ZM14,19H10V16a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1Zm-4-8h4a1,1,0,0,1,0,2H10a1,1,0,0,1,0-2Z" />
         </svg>

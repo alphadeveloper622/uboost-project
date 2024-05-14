@@ -1,6 +1,7 @@
 import { Button } from "@nextui-org/react";
 import { useRouter } from 'next/navigation';
 import Link from "next/link";
+import { resolveBGColor, resolveElementWidth, resolveTextColor, resolveTextDirection } from "./Common Types";
 
 const NormalTitle = ({
   id,
@@ -42,7 +43,9 @@ const NormalTitle = ({
   const router = useRouter();
 
   return (
-    <div id={id} className={`relative z-20 overflow-hidden pb-[20px] pt-[80px] md:pt-[80px] lg:pt-[80px] ${bg_color[0] == '#' ? "bg-[" + bg_color + "]" : "bg-" + bg_color} ${width ? `w-[${width}]` : 'w-full'}`}>
+    <div id={id} className={`relative z-20 overflow-hidden pb-[20px] pt-[80px] md:pt-[80px] lg:pt-[80px] 
+    ${resolveBGColor({ color: bg_color })} 
+    ${resolveElementWidth({ width: width })}`}>
       <div className="from-stroke/0 via-stroke to-stroke/0 dark:via-dark-3 absolute bottom-0 left-0 h-px w-full bg-gradient-to-r"></div>
       <div className="container w-full flex-col flex-wrap items-center">
         <div className="flex flex-row flex-wrap items-center">
@@ -58,10 +61,9 @@ const NormalTitle = ({
             <div className="text-center flex-grow">
               <p className={`text-3xl font-bold sm:text-4xl md:text-[40px] md:leading-[1.2] 
                 ${information ? 'mb-4' : ''}
-                ${title_color == "black" ? "text-black" : `text-[${title_color}]`} 
-                ${title_direction === 'left' ? 'text-left' :
-                  title_direction === 'center' ? 'text-center' :
-                    title_direction === 'right' ? 'text-right' : ''}`}>
+                ${resolveTextColor({ color: title_color })}
+                ${resolveTextDirection({ direction: title_direction })}`}>
+
                 {title}
               </p>
             </div>
@@ -76,17 +78,14 @@ const NormalTitle = ({
         </div>
         <div className="flex justify-center items-center">
           <div className={`flex flex-row w-10/12 justify-center items-center mb-5 text-base 
-            ${information_direction === 'left' ? 'text-left' :
-              information_direction === 'center' ? 'text-center' :
-                information_direction === 'right' ? 'text-right' : ''}`}>
+            ${resolveTextDirection({direction:information_direction})}`}>
             {information_icon ?
               (<div className='justify-center hidden lg:flex items-center'>
                 {information_icon} &nbsp;&nbsp;
               </div>) :
               (<div />)}
-            <div
-              className={`text-center text-md lg:text-lg xl:text-xl 2xl:text-2xl font-medium leading-tight 
-            ${information_color == "primary" ? "text-primary" : `text-[${information_color}]`}`}>
+            <div className={`text-center text-md lg:text-lg xl:text-xl 2xl:text-2xl font-medium leading-tight 
+              ${resolveTextColor({color:information_color})}`}>
               {information_link ? (
                 <Link href={information_link || ""} className="hover:underline">
                   {information}

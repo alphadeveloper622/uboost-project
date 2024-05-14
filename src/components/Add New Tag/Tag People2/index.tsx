@@ -53,8 +53,8 @@ const Tag_People2 = () => {
                   </div>
 
                   <div className="w-full relative px-2">
-                    <NormalInput id="name" name="Name" placeholder="Enter name" namecolor="black" />
-                    <NormalInput id="phone" name="Phone Number" placeholder="Enter phone number" namecolor="black" />
+                    <NormalInput id="name" name="Name" placeholder="Enter name" name_color="black" />
+                    <NormalInput id="phone" name="Phone Number" placeholder="Enter phone number" name_color="black" />
                     <div className="mb-4 flex justify-center">
                       <Button
                         variant="solid"

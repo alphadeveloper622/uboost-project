@@ -11,7 +11,7 @@ const SingleCampaign = ({ campaign }: { campaign: Campaign }) => {
   const { title, category, image, comment, fundraiser, goal, raised, createdDate } = campaign;
   return (
     <>
-      <div className="w-[400px] relative overflow-hidden border-2  rounded-md bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark">
+      <div className=" relative overflow-hidden border-2  rounded-md bg-white shadow-one duration-300 hover:shadow-two dark:bg-dark dark:hover:shadow-gray-dark">
         <div className="container p-0 m-0 space-x-0 space-y-0 bg-dark/20">
           <div className="relative block aspect-[16/9] w-full bg-dark/20">
             <span className="absolute right-6 top-6 inline-flex items-center justify-center rounded-full bg-primary px-4 py-2 md:text-[10px] lg:text-[10px] xl:text-[12px] 2xl:text-[12px] font-semibold capitalize text-white">

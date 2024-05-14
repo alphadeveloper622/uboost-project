@@ -1,8 +1,4 @@
-import Link from "next/link";
 import Image from "next/image";
-import { IconButton, Typography } from "@material-tailwind/react";
-import menuData from './../Header/menuData';
-import { px } from "framer-motion";
 
 const Hero = () => {
   return (

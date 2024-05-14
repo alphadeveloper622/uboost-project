@@ -84,12 +84,12 @@ const Add_New_Profile2 = () => {
                         </div>
                       </div>
                     </div>
-                    <NormalInput id="firstname" name="First Name(Student / Member)*" placeholder="Enter your first name" namecolor="black" />
-                    <NormalInput id="lastname" name="Last Name(Student / Member)*" placeholder="Enter your Lalst name" namecolor="black" />
+                    <NormalInput id="firstname" name="First Name(Student / Member)*" placeholder="Enter your first name" name_color="black" />
+                    <NormalInput id="lastname" name="Last Name(Student / Member)*" placeholder="Enter your Lalst name" name_color="black" />
                     <NormalDateInput id="birthday" name="Birth Date*" defaultDate={""} placeholder={""} />
-                    <NormalInput id="streetaddress" name="Address*" placeholder="Street address" namecolor="black" />
-                    <NormalInput id="city" name="" placeholder="City" namecolor="black" />
-                    <NormalInput id="state-zip" name="" placeholder="State, Zip" namecolor="black" />
+                    <NormalInput id="streetaddress" name="Address*" placeholder="Street address" name_color="black" />
+                    <NormalInput id="city" name="" placeholder="City" name_color="black" />
+                    <NormalInput id="state-zip" name="" placeholder="State, Zip" name_color="black" />
                     <div className="mb-9 flex justify-center">
                       <Button
                         variant="solid"

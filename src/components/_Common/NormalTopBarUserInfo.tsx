@@ -2,8 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
 import { useRouter } from 'next/navigation';
-import getCommonIcons from "./CommonIcons";
 import { useState } from 'react';
+
+import getCommonIcons from "./CommonIcons";
+import { resolveElementWidth, resolveTextColor, resolveTextDirection } from "./Common Types";
 
 const NormalTopBarUserInfo = ({
   id,

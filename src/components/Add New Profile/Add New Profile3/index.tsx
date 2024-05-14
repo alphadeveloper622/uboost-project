@@ -44,9 +44,9 @@ const Add_New_Profile3 = () => {
                 <div>
                   <div className="w-full px-2">
                     <NormalDropdownInput id="organization" name="Organization or School*" placeholder="Select an option" options={organization_options} />
-                    <NormalInput id="cellnumber" name="Cell number*" placeholder="Cell number" namecolor="black" />
-                    <NormalInput id="email" name="Email*" placeholder="Email" namecolor="black" />
-                    <NormalInput id="password" name="Password*" placeholder="Password" namecolor="black" />
+                    <NormalInput id="cellnumber" name="Cell number*" placeholder="Cell number" name_color="black" />
+                    <NormalInput id="email" name="Email*" placeholder="Email" name_color="black" />
+                    <NormalInput id="password" name="Password*" placeholder="Password" name_color="black" />
                     <div id="" className='px-2 mb-8 justify-center w-full'>
                       <label
                         htmlFor="name"

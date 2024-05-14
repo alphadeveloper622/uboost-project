@@ -105,7 +105,7 @@ const Add_New_Campaign = () => {
                     <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
                       New Campaign
                     </h2>
-                    <NormalInput name="Name" placeholder="Enter campaign name" namecolor="black" />
+                    <NormalInput name="Name" placeholder="Enter campaign name" name_color="black" />
                     <NormalDropdownInput id="category" name="Category" placeholder="What Category?" options={categorylist} />
                     <NormalTextInputBox id="description" name="Description" placeholder="Enter description" row={6} />
                     <div className="mb-9 flex justify-center">

@@ -1,7 +1,6 @@
 import About from "@/components/About";
 import Why_uboost from "@/components/Why uboost";
 import ScrollUp from "@/components/_Common/ScrollUp";
-import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
@@ -11,7 +10,6 @@ import TheNextGeneration from "@/components/The next generation";
 import HowItWorks from "@/components/How It Works";
 import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
-import SectionTitle from "@/components/_Common/SectionTitle";
 
 
 export const metadata: Metadata = {
